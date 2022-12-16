@@ -105,26 +105,24 @@ namespace ClinicDB.Forms
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.White);
-            //OpenChildForm(new StuddentDashboardForm());
+          
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.White);
-            //OpenChildForm(new StudentForm());
+           
         }
 
         private void disbtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.White);
-            //OpenChildForm(new StudentDept());
 
         }
 
         private void sickbtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.White);
-            //OpenChildForm(new StudentDiseasesForm());
 
 
         }
@@ -132,21 +130,20 @@ namespace ClinicDB.Forms
         private void userbtn_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.White);
-            //OpenChildForm(new StudentTreatment());
 
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
+            Roles roles = new Roles();
+            OpenChildForm(roles);
             ActivateButton(sender, Color.White);
-            //OpenChildForm(new StudentMobileN());
 
         }
 
         private void btnNurse_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.White);
-            //OpenChildForm(new Users());
         }
 
 
@@ -166,6 +163,7 @@ namespace ClinicDB.Forms
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
         private void panel1_MouseDown_1(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -174,22 +172,26 @@ namespace ClinicDB.Forms
 
         private void mainFormId_Resize(object sender, EventArgs e)
         {
-            //StudentForm stuForm = new StudentForm();
 
             if (WindowState == FormWindowState.Maximized)
             {
                 menuPanel.Width = 353;
-                //stuForm.studentDt.DefaultCellStyle.Font = new Font(new FontFamily("Poppins"), 38);
+                //doc.docDt.DefaultCellStyle.Font = new Font(new FontFamily("Poppins"), 38);
             }
             else
             {
                 menuPanel.Width = 253;
-                //stuForm.studentDt.DefaultCellStyle.Font = new Font(new FontFamily("Poppins"), 4);
+                //doc.docDt.DefaultCellStyle.Font = new Font(new FontFamily("Poppins"), 4);
 
             }
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mainFormId_Load(object sender, EventArgs e)
         {
 
         }
