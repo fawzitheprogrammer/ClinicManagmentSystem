@@ -42,8 +42,7 @@ namespace ClinicDB
                 Hashtable ht = new Hashtable();
                 ht.Add("@name", roleText.Texts);
 
-                crud.DataInsertUpdateDelete("st_insertRoles",ht);
-                mainClass.showMessage("Data inserted", true);
+                crud.DataInsertUpdateDelete("st_insertRoles", ht, "Data inserted");
                 mainClass.resetEnable(mainPanel);
                 roles.loadData();
             }
@@ -56,18 +55,17 @@ namespace ClinicDB
             ht.Add("@name", roleText.Texts);
             ht.Add("@Id", roleID);
 
-         /*   ListBox paramList = new ListBox();
-            paramList.Items.Add("@name");
-            paramList.Items.Add("@id");
-            ListBox valueList = new ListBox();
-            valueList.Items.Add(roleText.Texts);
-            valueList.Items.Add(roleID);*/
+            /*   ListBox paramList = new ListBox();
+               paramList.Items.Add("@name");
+               paramList.Items.Add("@id");
+               ListBox valueList = new ListBox();
+               valueList.Items.Add(roleText.Texts);
+               valueList.Items.Add(roleID);*/
 
-            if (crud.DataInsertUpdateDelete("st_updateRoles",ht) > 0)
-            {
-                mainClass.showMessage(roleText.Texts + " updated successfully in the system.", true);
-                this.Close();
-            }
+            string theRecord = roleText.Texts + " updated successfully in the system.";
+            crud.DataInsertUpdateDelete("st_updateRoles", ht,theRecord);
+            roles.loadData();
+            this.Close();
         }
     }
 }

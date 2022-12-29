@@ -16,7 +16,7 @@ namespace MainClass
     {
         public static void sno(DataGridView gv,string snoGV)
         {
-            int count = 0;
+            int count = 0; //1001, 1002 ,1003
             foreach(DataGridViewRow row in gv.Rows)
             {
                 count++;
@@ -98,7 +98,7 @@ namespace MainClass
                                 arr.Remove(tb);
                             }
                         }
-                        tb.BackColor = tb.Texts == "" ? tb.BackColor = Color.Firebrick : tb.BackColor = Color.White;
+                        tb.BorderColor = tb.Texts == "" ? tb.BorderColor = Color.Firebrick : tb.BorderColor = Color.Blue;
                     }
                 }
             }

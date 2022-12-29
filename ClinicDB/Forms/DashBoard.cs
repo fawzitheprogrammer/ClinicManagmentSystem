@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClinicD.FormAdd;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +22,7 @@ namespace ClinicDB.Forms
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(10, 92);
+            leftBorderBtn.Size = new Size(10, 80);
             menuPanel.Controls.Add(leftBorderBtn);
             //Form
             this.Text = string.Empty;
@@ -110,6 +111,8 @@ namespace ClinicDB.Forms
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
+            StaffMemeberForm staff = new StaffMemeberForm();
+            OpenChildForm(staff);
             ActivateButton(sender, Color.White);
            
         }
@@ -129,15 +132,16 @@ namespace ClinicDB.Forms
 
         private void userbtn_Click(object sender, EventArgs e)
         {
+
+            MedicineForm med = new MedicineForm();
+            OpenChildForm(med);
             ActivateButton(sender, Color.White);
 
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-            Roles roles = new Roles();
-            OpenChildForm(roles);
-            ActivateButton(sender, Color.White);
+           
 
         }
 
@@ -194,6 +198,18 @@ namespace ClinicDB.Forms
         private void mainFormId_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void sickbtn_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void phonNum_Click(object sender, EventArgs e)
+        {
+            Roles roles = new Roles();
+            OpenChildForm(roles);
+            ActivateButton(sender, Color.White);
         }
     }
 }

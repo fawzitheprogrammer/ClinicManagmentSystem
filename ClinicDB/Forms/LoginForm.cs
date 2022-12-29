@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Authentication;
+using System.Collections;
 
 namespace ClinicDB
 {
@@ -31,17 +33,13 @@ namespace ClinicDB
 
         private void login_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            mainFormId db = new mainFormId();
-            db.ShowDialog();
-            this.Close();
-           
+
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-          
 
+            // C:\Users\SOFTWARE\Documents
             string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\cms_connect";
             if (!File.Exists(path))
             {
@@ -55,5 +53,31 @@ namespace ClinicDB
 
             }
         }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            if(MainClass.mainClass.checkControls(loginPanel).Count > 0)
+            {
+                MainClass.mainClass.showMessage("Please fill out all fields to continue", false);
+            }
+            else
+            {
+
+                Hashtable ht = new Hashtable();
+
+                ht.Add("@username", userText.Text);
+                ht.Add("@pass", passText.Text);
+
+              if (login.getLoginDetails("st_loginAuth",ht))
+                {
+                    mainFormId mf = new mainFormId();
+                    openFormClass.getForm(mf,false);
+                    this.Hide();
+                }
+
+            }
+        }
+
+       
     }
 }

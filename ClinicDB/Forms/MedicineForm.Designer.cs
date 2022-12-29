@@ -1,6 +1,6 @@
 ﻿namespace ClinicDB
 {
-    partial class Roles
+    partial class MedicineForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Roles));
-            this.rolesDg = new System.Windows.Forms.DataGridView();
-            this.roleIDGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roleGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.medDg = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.medicine = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.company = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.delete = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.search = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,95 +45,111 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.rolesDg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medDg)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // rolesDg
+            // medDg
             // 
-            this.rolesDg.AllowUserToAddRows = false;
-            this.rolesDg.AllowUserToDeleteRows = false;
-            this.rolesDg.AllowUserToResizeColumns = false;
-            this.rolesDg.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.rolesDg.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.rolesDg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.medDg.AllowUserToAddRows = false;
+            this.medDg.AllowUserToDeleteRows = false;
+            this.medDg.AllowUserToResizeColumns = false;
+            this.medDg.AllowUserToResizeRows = false;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.medDg.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
+            this.medDg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rolesDg.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.rolesDg.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.rolesDg.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.rolesDg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rolesDg.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
-            this.rolesDg.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.rolesDg.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.rolesDg.ColumnHeadersHeight = 60;
-            this.rolesDg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.rolesDg.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.roleIDGV,
-            this.roleGV,
+            this.medDg.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.medDg.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.medDg.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.medDg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.medDg.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
+            this.medDg.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle32.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.medDg.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            this.medDg.ColumnHeadersHeight = 60;
+            this.medDg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.medDg.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.medicine,
+            this.company,
+            this.type,
             this.delete});
-            this.rolesDg.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.rolesDg.DefaultCellStyle = dataGridViewCellStyle3;
-            this.rolesDg.EnableHeadersVisualStyles = false;
-            this.rolesDg.GridColor = System.Drawing.SystemColors.Highlight;
-            this.rolesDg.Location = new System.Drawing.Point(25, 86);
-            this.rolesDg.Name = "rolesDg";
-            this.rolesDg.ReadOnly = true;
-            this.rolesDg.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.rolesDg.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.rolesDg.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.rolesDg.RowHeadersVisible = false;
-            this.rolesDg.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(5);
-            this.rolesDg.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.rolesDg.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.rolesDg.RowTemplate.Height = 27;
-            this.rolesDg.Size = new System.Drawing.Size(1105, 578);
-            this.rolesDg.TabIndex = 9;
-            this.rolesDg.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.user_CellContentClick);
-            this.rolesDg.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.user_CellMouseClick);
+            this.medDg.Cursor = System.Windows.Forms.Cursors.Default;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.medDg.DefaultCellStyle = dataGridViewCellStyle33;
+            this.medDg.EnableHeadersVisualStyles = false;
+            this.medDg.GridColor = System.Drawing.SystemColors.Highlight;
+            this.medDg.Location = new System.Drawing.Point(25, 86);
+            this.medDg.Name = "medDg";
+            this.medDg.ReadOnly = true;
+            this.medDg.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.medDg.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle34.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.medDg.RowHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            this.medDg.RowHeadersVisible = false;
+            this.medDg.RowHeadersWidth = 51;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle35.Padding = new System.Windows.Forms.Padding(5);
+            this.medDg.RowsDefaultCellStyle = dataGridViewCellStyle35;
+            this.medDg.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.medDg.RowTemplate.Height = 27;
+            this.medDg.Size = new System.Drawing.Size(1105, 578);
+            this.medDg.TabIndex = 9;
+            this.medDg.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.user_CellContentClick);
+            this.medDg.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.user_CellMouseClick);
             // 
-            // roleIDGV
+            // ID
             // 
-            this.roleIDGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.roleIDGV.HeaderText = "ID";
-            this.roleIDGV.MinimumWidth = 6;
-            this.roleIDGV.Name = "roleIDGV";
-            this.roleIDGV.ReadOnly = true;
-            this.roleIDGV.Width = 61;
+            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 61;
             // 
-            // roleGV
+            // medicine
             // 
-            this.roleGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.roleGV.HeaderText = "Username";
-            this.roleGV.MinimumWidth = 6;
-            this.roleGV.Name = "roleGV";
-            this.roleGV.ReadOnly = true;
+            this.medicine.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.medicine.HeaderText = "Medicine";
+            this.medicine.MinimumWidth = 6;
+            this.medicine.Name = "medicine";
+            this.medicine.ReadOnly = true;
+            // 
+            // company
+            // 
+            this.company.HeaderText = "Company";
+            this.company.MinimumWidth = 6;
+            this.company.Name = "company";
+            this.company.ReadOnly = true;
+            // 
+            // type
+            // 
+            this.type.HeaderText = "Type";
+            this.type.MinimumWidth = 6;
+            this.type.Name = "type";
+            this.type.ReadOnly = true;
             // 
             // delete
             // 
@@ -145,11 +162,12 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(161)))));
             this.panel1.Controls.Add(this.search);
             this.panel1.Controls.Add(this.iconButton2);
             this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1157, 59);
@@ -159,6 +177,7 @@
             // 
             this.search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.search.Animated = true;
             this.search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(161)))));
             this.search.BorderRadius = 3;
             this.search.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -221,7 +240,6 @@
             // 
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
             this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Width = 125;
@@ -234,16 +252,16 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 519;
             // 
-            // Roles
+            // MedicineForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1157, 696);
-            this.Controls.Add(this.rolesDg);
+            this.Controls.Add(this.medDg);
             this.Controls.Add(this.panel1);
-            this.Name = "Roles";
-            this.Text = "Roles";
-            ((System.ComponentModel.ISupportInitialize)(this.rolesDg)).EndInit();
+            this.Name = "MedicineForm";
+            this.Text = "Users";
+            ((System.ComponentModel.ISupportInitialize)(this.medDg)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -252,14 +270,16 @@
         #endregion
 
         private FontAwesome.Sharp.IconButton iconButton2;
-        public System.Windows.Forms.DataGridView rolesDg;
+        public System.Windows.Forms.DataGridView medDg;
         private System.Windows.Forms.Panel panel1;
         public FontAwesome.Sharp.IconButton iconButton1;
         private Guna.UI2.WinForms.Guna2TextBox search;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn roleIDGV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn roleGV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn medicine;
+        private System.Windows.Forms.DataGridViewTextBoxColumn company;
+        private System.Windows.Forms.DataGridViewTextBoxColumn type;
         private System.Windows.Forms.DataGridViewCheckBoxColumn delete;
     }
 }

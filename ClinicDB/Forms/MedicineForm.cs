@@ -14,10 +14,10 @@ using System.Windows.Forms;
 
 namespace ClinicDB
 {
-    public partial class Roles : Form
+    public partial class MedicineForm : Form
     {
        
-        public Roles()
+        public MedicineForm()
         {
             InitializeComponent();
             loadData();
@@ -26,16 +26,19 @@ namespace ClinicDB
         public void loadData()
         {
             ListBox listBox = new ListBox();
-            listBox.Items.Add(roleIDGV);
-            listBox.Items.Add(roleGV);
-            CRUD.crud.loadData("st_getRoles", rolesDg, listBox);
+            listBox.Items.Add(ID);
+            listBox.Items.Add(medicine);
+            listBox.Items.Add(company);
+            listBox.Items.Add(type);
+
+            CRUD.crud.loadData("st_getMed", medDg, listBox);
         }
         private void iconButton1_Click(object sender, EventArgs e)
         {
 
-            RolesAdd rolesAdd = new RolesAdd(this);
-            rolesAdd.rjButton1.Enabled = false;
-            openFormClass.getForm(rolesAdd, true);
+            MedicineAdd medAdd = new MedicineAdd(this);
+            medAdd.rjButton1.Enabled = false;
+            openFormClass.getForm(medAdd, true);
 
         }
 
@@ -48,34 +51,35 @@ namespace ClinicDB
         {
             try
             {
-                DataGridViewRow row = rolesDg.Rows[e.RowIndex];
+                DataGridViewRow row = medDg.Rows[e.RowIndex];
 
                 if (row.Index != -1)
                 {
 
-                    if (rolesDg.Columns[e.ColumnIndex].Name == "delete")
+                    if (medDg.Columns[e.ColumnIndex].Name == "delete")
 
                     {
 
                         Hashtable ht = new Hashtable();
-                        ht.Add("@id", Convert.ToInt32(row.Cells["roleIDGV"].Value.ToString()));
+                        ht.Add("@id", Convert.ToInt32(row.Cells["ID"].Value.ToString()));
 
 
-                        crud.DataInsertUpdateDelete("st_deleteRoles", ht, "Data deleted");
+                        crud.DataInsertUpdateDelete("st_deleteMed", ht, "Data deleted");
                         loadData();
 
 
                     }
                     else
                     {
-                        RolesAdd rolesAdd = new RolesAdd(this);
-                        rolesAdd.btnSave.Enabled = false;
+                        MedicineAdd medAdd = new MedicineAdd(this);
+                        medAdd.btnSave.Enabled = false;
                         if (e.RowIndex != -1 && e.ColumnIndex != -1)
                         {
-                            rolesAdd.roleID = Convert.ToInt32(row.Cells["roleIDGV"].Value.ToString());
-                            rolesAdd.roleText.Texts = row.Cells["roleGV"].Value.ToString();
-                        }
-                        openFormClass.getForm(rolesAdd, true);
+                            medAdd.roleID = Convert.ToInt32(row.Cells["ID"].Value.ToString());
+                            medAdd.medTxt.Texts = row.Cells["medicine"].Value.ToString();
+                            medAdd.comTxt.Texts = row.Cells["company"].Value.ToString();
+                            medAdd.type.Text = row.Cells["type"].Value.ToString();                        }
+                            openFormClass.getForm(medAdd, true);
                     }
                 }
             }catch (Exception)
@@ -94,10 +98,11 @@ namespace ClinicDB
             else
             {
                 ListBox listBox = new ListBox();
-
-                listBox.Items.Add(roleIDGV);
-                listBox.Items.Add(roleGV);
-                CRUD.crud.searchData("st_searchRoles", rolesDg,listBox, search.Text);
+                listBox.Items.Add(ID);
+                listBox.Items.Add(medicine);
+                listBox.Items.Add(company);
+                listBox.Items.Add(type);
+                CRUD.crud.searchData("st_searchMed", medDg,listBox, search.Text);
             }
 
         }

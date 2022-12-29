@@ -13,7 +13,7 @@ namespace CRUD
 {
     public class crud
     {
-        public static int DataInsertUpdateDelete(string proc,Hashtable ht)
+        public static int DataInsertUpdateDelete(string proc,Hashtable ht,string isDoneMessage)
         {
             int res = 0;
             try
@@ -31,8 +31,9 @@ namespace CRUD
                 mainClass.con.Open();
                 res = cmd.ExecuteNonQuery();
                 mainClass.con.Close();
+                mainClass.showMessage(isDoneMessage, true);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 mainClass.con.Close();
                 mainClass.showMessage(ex.Message, false);
@@ -66,43 +67,139 @@ namespace CRUD
                     count++;
                     row.Cells[0].Value = count;
                 }
-            } catch(Exception ex)
+            } catch(Exception)
             {
-                mainClass.showMessage(ex.ToString(), false);
+               // mainClass.showMessage(ex.ToString(), false);
             }
         }
 
-        public static void searchData(string proc, DataGridView dg, ListBox listBox)
+
+        public static void loadRole(string proc,ComboBox cb,string valueMember,string displayMember)
         {
+
+
             try
             {
                 SqlCommand cmd = new SqlCommand(proc, mainClass.con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@name", listBox.Items[0]);
-                cmd.Parameters.AddWithValue("@id", listBox.Items[0]);
-
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
-
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                for (int i = 0; i < listBox.Items.Count; i++)
-                {
-                    string colNameOne = ((DataGridViewColumn)listBox.Items[i]).Name;
-                    dg.Columns[colNameOne].DataPropertyName = dt.Columns[i].ToString();
-                }
-                dg.DataSource = dt;
-                int count = 0;
+                cb.DataSource = dt;
+                cb.DisplayMember = displayMember;
+                cb.ValueMember = valueMember;
+                cb.SelectedIndex = -1;
+ 
+            }
+            catch (Exception ex)
+            {
+                mainClass.showMessage(ex.ToString(), false);
+            }
 
-                foreach (DataGridViewRow row in dg.Rows)
+
+        }
+
+        public static void searchData(string proc, DataGridView dg,ListBox listBox, string text)
+        {
+
+
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand(proc, mainClass.con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@theText", text);
+
+
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0)
                 {
-                    count++;
-                    row.Cells[0].Value = count;
+                    for (int i = 0; i < listBox.Items.Count; i++)
+                    {
+                        string colNameOne = ((DataGridViewColumn)listBox.Items[i]).Name;
+                        dg.Columns[colNameOne].DataPropertyName = dt.Columns[i].ToString();
+                    }
+
+
+                    dg.DataSource = dt;
+
+                    int count = 0;
+
+                    foreach (DataGridViewRow row in dg.Rows)
+                    {
+                        count++;
+                        row.Cells[0].Value = count;
+                    }
+                }
+                else
+                {
+                    mainClass.showMessage("There is no record matching", false);
                 }
             }
             catch (Exception ex)
             {
                 mainClass.showMessage(ex.ToString(), false);
             }
+
+
+
+
+
+            /*try
+            {
+                SqlCommand cmd = new SqlCommand(proc, mainClass.con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@theText", text);
+
+                mainClass.con.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                var dataTable = dg.DataSource as DataTable;
+
+
+
+
+
+
+
+
+         //       int i = 0;
+
+                if (dr.HasRows)
+                {
+                    dataTable.Rows.Clear();
+
+
+                    while (dr.Read())
+                    {
+
+                        Object newObj = new Object[7];
+
+                        foreach(Object o in dr)
+                        {
+                           
+                        }
+                        
+                    }
+
+                    
+                }
+                else
+                {
+                    mainClass.showMessage("There is no record matching", false);
+                }
+                dr.Close();
+                mainClass.con.Close();
+            }
+            catch (Exception ex)
+            {
+                mainClass.con.Close();
+                mainClass.showMessage(ex.ToString(), false);
+            }*/
         }
 
     }

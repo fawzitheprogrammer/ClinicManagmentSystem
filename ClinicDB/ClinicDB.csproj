@@ -257,11 +257,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classses\openFormClass.cs" />
-    <Compile Include="Form Add\RolesAdd.cs">
+    <Compile Include="FormAdd\MedicineAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form Add\RolesAdd.Designer.cs">
+    <Compile Include="FormAdd\MedicineAdd.Designer.cs">
+      <DependentUpon>MedicineAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd\RolesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd\RolesAdd.Designer.cs">
       <DependentUpon>RolesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd\StaffMemberAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd\StaffMemberAdd.Designer.cs">
+      <DependentUpon>StaffMemberAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ConnectionForrm.cs">
       <SubType>Form</SubType>
@@ -281,16 +293,34 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MedicineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MedicineForm.Designer.cs">
+      <DependentUpon>MedicineForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Roles.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Roles.Designer.cs">
       <DependentUpon>Roles.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\StaffMemeberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StaffMemeberForm.Designer.cs">
+      <DependentUpon>StaffMemeberForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form Add\RolesAdd.resx">
+    <EmbeddedResource Include="FormAdd\MedicineAdd.resx">
+      <DependentUpon>MedicineAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd\RolesAdd.resx">
       <DependentUpon>RolesAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd\StaffMemberAdd.resx">
+      <DependentUpon>StaffMemberAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConnectionForrm.resx">
       <DependentUpon>ConnectionForrm.cs</DependentUpon>
@@ -301,8 +331,14 @@
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MedicineForm.resx">
+      <DependentUpon>MedicineForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Roles.resx">
       <DependentUpon>Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StaffMemeberForm.resx">
+      <DependentUpon>StaffMemeberForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -346,6 +382,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Authentication\Authentication.csproj">
+      <Project>{040bd0cb-ddb8-4f89-bbf6-aa85cdcf6b96}</Project>
+      <Name>Authentication</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CRUD\CRUD.csproj">
       <Project>{1c8698e3-cddb-4b4a-a134-50779301f09c}</Project>
       <Name>CRUD</Name>

@@ -12,6 +12,7 @@ namespace Settings
     {
         public static void createFile(string file, string ds, string db)
         {
+            // C:\Users\SOFTWARE\Documents
             string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + file;
             if (!File.Exists(path))
             {

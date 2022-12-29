@@ -30,11 +30,12 @@
         {
             this.menuPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.sickbtn = new FontAwesome.Sharp.IconButton();
             this.dashbtn = new FontAwesome.Sharp.IconButton();
-            this.stubtn = new FontAwesome.Sharp.IconButton();
+            this.sickbtn = new FontAwesome.Sharp.IconButton();
             this.disbtn = new FontAwesome.Sharp.IconButton();
-            this.userbtn = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.medBtn = new FontAwesome.Sharp.IconButton();
+            this.stubtn = new FontAwesome.Sharp.IconButton();
             this.phonNum = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
@@ -54,11 +55,12 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.sickbtn);
             this.flowLayoutPanel1.Controls.Add(this.dashbtn);
-            this.flowLayoutPanel1.Controls.Add(this.stubtn);
+            this.flowLayoutPanel1.Controls.Add(this.sickbtn);
             this.flowLayoutPanel1.Controls.Add(this.disbtn);
-            this.flowLayoutPanel1.Controls.Add(this.userbtn);
+            this.flowLayoutPanel1.Controls.Add(this.iconButton2);
+            this.flowLayoutPanel1.Controls.Add(this.medBtn);
+            this.flowLayoutPanel1.Controls.Add(this.stubtn);
             this.flowLayoutPanel1.Controls.Add(this.phonNum);
             this.flowLayoutPanel1.Controls.Add(this.iconButton1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -66,28 +68,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(311, 1051);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // sickbtn
-            // 
-            this.sickbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.sickbtn.FlatAppearance.BorderSize = 0;
-            this.sickbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sickbtn.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sickbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sickbtn.IconChar = FontAwesome.Sharp.IconChar.ListAlt;
-            this.sickbtn.IconColor = System.Drawing.Color.White;
-            this.sickbtn.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.sickbtn.IconSize = 42;
-            this.sickbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sickbtn.Location = new System.Drawing.Point(3, 3);
-            this.sickbtn.Name = "sickbtn";
-            this.sickbtn.Padding = new System.Windows.Forms.Padding(15, 5, 0, 6);
-            this.sickbtn.Size = new System.Drawing.Size(725, 114);
-            this.sickbtn.TabIndex = 4;
-            this.sickbtn.Text = "Reservations";
-            this.sickbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.sickbtn.UseVisualStyleBackColor = true;
-            this.sickbtn.Click += new System.EventHandler(this.sickbtn_Click);
             // 
             // dashbtn
             // 
@@ -101,37 +81,37 @@
             this.dashbtn.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.dashbtn.IconSize = 42;
             this.dashbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dashbtn.Location = new System.Drawing.Point(3, 123);
+            this.dashbtn.Location = new System.Drawing.Point(3, 3);
             this.dashbtn.Name = "dashbtn";
             this.dashbtn.Padding = new System.Windows.Forms.Padding(15, 5, 0, 6);
-            this.dashbtn.Size = new System.Drawing.Size(725, 114);
+            this.dashbtn.Size = new System.Drawing.Size(725, 100);
             this.dashbtn.TabIndex = 1;
             this.dashbtn.Text = "Dashboard";
             this.dashbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.dashbtn.UseVisualStyleBackColor = true;
             this.dashbtn.Click += new System.EventHandler(this.iconButton1_Click);
             // 
-            // stubtn
+            // sickbtn
             // 
-            this.stubtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.stubtn.FlatAppearance.BorderSize = 0;
-            this.stubtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.stubtn.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stubtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.stubtn.IconChar = FontAwesome.Sharp.IconChar.UserDoctor;
-            this.stubtn.IconColor = System.Drawing.Color.White;
-            this.stubtn.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.stubtn.IconSize = 42;
-            this.stubtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.stubtn.Location = new System.Drawing.Point(3, 243);
-            this.stubtn.Name = "stubtn";
-            this.stubtn.Padding = new System.Windows.Forms.Padding(15, 5, 0, 6);
-            this.stubtn.Size = new System.Drawing.Size(725, 114);
-            this.stubtn.TabIndex = 2;
-            this.stubtn.Text = "Doctors";
-            this.stubtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.stubtn.UseVisualStyleBackColor = true;
-            this.stubtn.Click += new System.EventHandler(this.iconButton2_Click);
+            this.sickbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.sickbtn.FlatAppearance.BorderSize = 0;
+            this.sickbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sickbtn.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sickbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.sickbtn.IconChar = FontAwesome.Sharp.IconChar.ListAlt;
+            this.sickbtn.IconColor = System.Drawing.Color.White;
+            this.sickbtn.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.sickbtn.IconSize = 42;
+            this.sickbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sickbtn.Location = new System.Drawing.Point(3, 109);
+            this.sickbtn.Name = "sickbtn";
+            this.sickbtn.Padding = new System.Windows.Forms.Padding(15, 5, 0, 6);
+            this.sickbtn.Size = new System.Drawing.Size(725, 100);
+            this.sickbtn.TabIndex = 14;
+            this.sickbtn.Text = "Reservations";
+            this.sickbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.sickbtn.UseVisualStyleBackColor = true;
+            this.sickbtn.Click += new System.EventHandler(this.sickbtn_Click_1);
             // 
             // disbtn
             // 
@@ -145,37 +125,80 @@
             this.disbtn.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.disbtn.IconSize = 42;
             this.disbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.disbtn.Location = new System.Drawing.Point(3, 363);
+            this.disbtn.Location = new System.Drawing.Point(3, 215);
             this.disbtn.Name = "disbtn";
             this.disbtn.Padding = new System.Windows.Forms.Padding(15, 5, 0, 6);
-            this.disbtn.Size = new System.Drawing.Size(725, 114);
+            this.disbtn.Size = new System.Drawing.Size(725, 100);
             this.disbtn.TabIndex = 3;
             this.disbtn.Text = "Patient";
             this.disbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.disbtn.UseVisualStyleBackColor = true;
             this.disbtn.Click += new System.EventHandler(this.disbtn_Click);
             // 
-            // userbtn
+            // iconButton2
             // 
-            this.userbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.userbtn.FlatAppearance.BorderSize = 0;
-            this.userbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.userbtn.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userbtn.IconChar = FontAwesome.Sharp.IconChar.Users;
-            this.userbtn.IconColor = System.Drawing.Color.White;
-            this.userbtn.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.userbtn.IconSize = 42;
-            this.userbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.userbtn.Location = new System.Drawing.Point(3, 483);
-            this.userbtn.Name = "userbtn";
-            this.userbtn.Padding = new System.Windows.Forms.Padding(15, 5, 0, 6);
-            this.userbtn.Size = new System.Drawing.Size(725, 114);
-            this.userbtn.TabIndex = 5;
-            this.userbtn.Text = "Visits";
-            this.userbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.userbtn.UseVisualStyleBackColor = true;
-            this.userbtn.Click += new System.EventHandler(this.userbtn_Click);
+            this.iconButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.iconButton2.IconColor = System.Drawing.Color.White;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton2.IconSize = 42;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(3, 321);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Padding = new System.Windows.Forms.Padding(15, 5, 0, 6);
+            this.iconButton2.Size = new System.Drawing.Size(725, 100);
+            this.iconButton2.TabIndex = 8;
+            this.iconButton2.Text = "Visits";
+            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            // 
+            // medBtn
+            // 
+            this.medBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.medBtn.FlatAppearance.BorderSize = 0;
+            this.medBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.medBtn.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.medBtn.IconChar = FontAwesome.Sharp.IconChar.ShieldVirus;
+            this.medBtn.IconColor = System.Drawing.Color.White;
+            this.medBtn.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.medBtn.IconSize = 42;
+            this.medBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.medBtn.Location = new System.Drawing.Point(3, 427);
+            this.medBtn.Name = "medBtn";
+            this.medBtn.Padding = new System.Windows.Forms.Padding(15, 5, 0, 6);
+            this.medBtn.Size = new System.Drawing.Size(725, 100);
+            this.medBtn.TabIndex = 5;
+            this.medBtn.Text = "Medicines";
+            this.medBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.medBtn.UseVisualStyleBackColor = true;
+            this.medBtn.Click += new System.EventHandler(this.userbtn_Click);
+            // 
+            // stubtn
+            // 
+            this.stubtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.stubtn.FlatAppearance.BorderSize = 0;
+            this.stubtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stubtn.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stubtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.stubtn.IconChar = FontAwesome.Sharp.IconChar.UserDoctor;
+            this.stubtn.IconColor = System.Drawing.Color.White;
+            this.stubtn.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.stubtn.IconSize = 42;
+            this.stubtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.stubtn.Location = new System.Drawing.Point(3, 533);
+            this.stubtn.Name = "stubtn";
+            this.stubtn.Padding = new System.Windows.Forms.Padding(15, 5, 0, 6);
+            this.stubtn.Size = new System.Drawing.Size(725, 100);
+            this.stubtn.TabIndex = 2;
+            this.stubtn.Text = "Staff Member";
+            this.stubtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.stubtn.UseVisualStyleBackColor = true;
+            this.stubtn.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // phonNum
             // 
@@ -189,15 +212,15 @@
             this.phonNum.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.phonNum.IconSize = 42;
             this.phonNum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.phonNum.Location = new System.Drawing.Point(3, 603);
+            this.phonNum.Location = new System.Drawing.Point(3, 639);
             this.phonNum.Name = "phonNum";
             this.phonNum.Padding = new System.Windows.Forms.Padding(15, 5, 0, 6);
-            this.phonNum.Size = new System.Drawing.Size(725, 114);
-            this.phonNum.TabIndex = 6;
+            this.phonNum.Size = new System.Drawing.Size(725, 100);
+            this.phonNum.TabIndex = 12;
             this.phonNum.Text = "Roles";
             this.phonNum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.phonNum.UseVisualStyleBackColor = true;
-            this.phonNum.Click += new System.EventHandler(this.iconButton4_Click);
+            this.phonNum.Click += new System.EventHandler(this.phonNum_Click);
             // 
             // iconButton1
             // 
@@ -212,11 +235,11 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton1.IconSize = 42;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(3, 723);
+            this.iconButton1.Location = new System.Drawing.Point(3, 745);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(15, 5, 0, 6);
-            this.iconButton1.Size = new System.Drawing.Size(725, 114);
-            this.iconButton1.TabIndex = 7;
+            this.iconButton1.Size = new System.Drawing.Size(725, 100);
+            this.iconButton1.TabIndex = 13;
             this.iconButton1.Text = "Logout";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = true;
@@ -262,13 +285,14 @@
         private System.Windows.Forms.Panel menuPanel;
         private FontAwesome.Sharp.IconButton dashbtn;
         private FontAwesome.Sharp.IconButton stubtn;
-        private FontAwesome.Sharp.IconButton phonNum;
-        private FontAwesome.Sharp.IconButton userbtn;
-        private FontAwesome.Sharp.IconButton sickbtn;
+        private FontAwesome.Sharp.IconButton medBtn;
         private FontAwesome.Sharp.IconButton disbtn;
         private System.Windows.Forms.Panel panelDesktop;
-        private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton sickbtn;
+        private FontAwesome.Sharp.IconButton phonNum;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
 
