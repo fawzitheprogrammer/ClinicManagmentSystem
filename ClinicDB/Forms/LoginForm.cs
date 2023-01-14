@@ -38,7 +38,71 @@ namespace ClinicDB
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
+            userText.Focus();
 
+
+        }
+
+
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+
+            // C:\Users\SOFTWARE\Documents
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\cms_connect";
+            if (!File.Exists(path))
+            {
+                MainClass.mainClass.showMessage("You are not connected to the server, please connect to the server and try again", false);
+            }
+            else
+            {
+
+                if (MainClass.mainClass.checkControls(loginPanel).Count > 0)
+                {
+                    MainClass.mainClass.showMessage("Please fill out all fields to continue", false);
+                }
+                else
+                {
+
+                    Hashtable ht = new Hashtable();
+
+                    ht.Add("@username", userText.Text);
+                    ht.Add("@pass", passText.Text);
+
+                    if (login.getLoginDetails("st_loginAuth", ht))
+                    {
+                        if (login.Role != "Admin")
+                        {
+                            this.Hide();
+                            mainFormId mf = new mainFormId();
+                            mf.staffBtn.Hide();
+                            mf.roles.Hide();
+                            mf.Show();
+
+                        }
+                        else
+                        {
+                            this.Hide();
+                            mainFormId mf = new mainFormId();
+                            mf.Show();
+
+                        }
+                    }
+
+                }
+
+            }
+
+           
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
             // C:\Users\SOFTWARE\Documents
             string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\cms_connect";
             if (!File.Exists(path))
@@ -53,31 +117,5 @@ namespace ClinicDB
 
             }
         }
-
-        private void loginBtn_Click(object sender, EventArgs e)
-        {
-            if(MainClass.mainClass.checkControls(loginPanel).Count > 0)
-            {
-                MainClass.mainClass.showMessage("Please fill out all fields to continue", false);
-            }
-            else
-            {
-
-                Hashtable ht = new Hashtable();
-
-                ht.Add("@username", userText.Text);
-                ht.Add("@pass", passText.Text);
-
-              if (login.getLoginDetails("st_loginAuth",ht))
-                {
-                    mainFormId mf = new mainFormId();
-                    mf.ShowDialog();
-                    this.Hide();
-                }
-
-            }
-        }
-
-       
     }
 }

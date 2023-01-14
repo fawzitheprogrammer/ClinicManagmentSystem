@@ -224,5 +224,14 @@ namespace ClinicDB.Forms
             OpenChildForm(diseasesForm);
             ActivateButton(sender, Color.White);
         }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+     
+
+        }
     }
 }
