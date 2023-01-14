@@ -71,7 +71,7 @@ namespace ClinicDB
               if (login.getLoginDetails("st_loginAuth",ht))
                 {
                     mainFormId mf = new mainFormId();
-                    openFormClass.getForm(mf,false);
+                    mf.ShowDialog();
                     this.Hide();
                 }
 
