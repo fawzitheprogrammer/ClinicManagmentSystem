@@ -30,8 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.loginPanel = new System.Windows.Forms.Panel();
             this.cancelBtn = new Guna.UI2.WinForms.Guna2Button();
             this.loginBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -41,7 +39,6 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.loginPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,11 +46,12 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(161)))));
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.MaximumSize = new System.Drawing.Size(451, 655);
+            this.panel1.MinimumSize = new System.Drawing.Size(451, 655);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(468, 655);
+            this.panel1.Size = new System.Drawing.Size(451, 655);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -67,23 +65,6 @@
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(474, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(615, 125);
-            this.panel2.TabIndex = 30;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(845, 297);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 22;
-            this.pictureBox2.TabStop = false;
-            // 
             // loginPanel
             // 
             this.loginPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -92,9 +73,11 @@
             this.loginPanel.Controls.Add(this.passText);
             this.loginPanel.Controls.Add(this.userText);
             this.loginPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.loginPanel.Location = new System.Drawing.Point(468, 0);
+            this.loginPanel.Location = new System.Drawing.Point(451, 0);
+            this.loginPanel.MaximumSize = new System.Drawing.Size(652, 655);
+            this.loginPanel.MinimumSize = new System.Drawing.Size(652, 655);
             this.loginPanel.Name = "loginPanel";
-            this.loginPanel.Size = new System.Drawing.Size(635, 655);
+            this.loginPanel.Size = new System.Drawing.Size(652, 655);
             this.loginPanel.TabIndex = 23;
             // 
             // cancelBtn
@@ -153,7 +136,6 @@
             this.passText.Name = "passText";
             this.passText.Size = new System.Drawing.Size(459, 58);
             this.passText.TabIndex = 31;
-            this.passText.Text = "PASSWORD";
             this.passText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // userText
@@ -178,7 +160,6 @@
             this.userText.Name = "userText";
             this.userText.Size = new System.Drawing.Size(459, 58);
             this.userText.TabIndex = 30;
-            this.userText.Text = "USERNAME";
             this.userText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2HtmlLabel1
@@ -194,7 +175,6 @@
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "CLINIC SYSTEM";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -218,7 +198,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(1103, 655);
             this.Controls.Add(this.loginPanel);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1121, 711);
@@ -229,7 +208,6 @@
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.loginPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -237,14 +215,12 @@
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel loginPanel;
         private Guna.UI2.WinForms.Guna2Button cancelBtn;
         private Guna.UI2.WinForms.Guna2Button loginBtn;
         private Bunifu.Framework.UI.BunifuMaterialTextbox passText;
         private Bunifu.Framework.UI.BunifuMaterialTextbox userText;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
     }
