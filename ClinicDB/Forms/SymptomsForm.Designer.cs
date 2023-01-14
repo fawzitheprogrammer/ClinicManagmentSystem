@@ -1,6 +1,6 @@
 ﻿namespace ClinicDB
 {
-    partial class MedicineForm
+    partial class SymptomsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -33,11 +33,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.medDg = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.medicine = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.company = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.symptomsDg = new System.Windows.Forms.DataGridView();
+            this.symptomsID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.symptomsGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diseaseGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diseaseIDGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.delete = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.search = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,24 +45,24 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.medDg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.symptomsDg)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // medDg
+            // symptomsDg
             // 
-            this.medDg.AllowUserToAddRows = false;
-            this.medDg.AllowUserToDeleteRows = false;
-            this.medDg.AllowUserToResizeColumns = false;
-            this.medDg.AllowUserToResizeRows = false;
+            this.symptomsDg.AllowUserToAddRows = false;
+            this.symptomsDg.AllowUserToDeleteRows = false;
+            this.symptomsDg.AllowUserToResizeColumns = false;
+            this.symptomsDg.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.medDg.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.medDg.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.medDg.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.medDg.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.medDg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.medDg.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.medDg.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.symptomsDg.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.symptomsDg.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.symptomsDg.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.symptomsDg.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.symptomsDg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.symptomsDg.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.symptomsDg.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins Medium", 10F);
@@ -71,16 +71,16 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.medDg.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.medDg.ColumnHeadersHeight = 60;
-            this.medDg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.medDg.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.medicine,
-            this.company,
-            this.type,
+            this.symptomsDg.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.symptomsDg.ColumnHeadersHeight = 60;
+            this.symptomsDg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.symptomsDg.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.symptomsID,
+            this.symptomsGV,
+            this.diseaseGV,
+            this.diseaseIDGV,
             this.delete});
-            this.medDg.Cursor = System.Windows.Forms.Cursors.Default;
+            this.symptomsDg.Cursor = System.Windows.Forms.Cursors.Default;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -88,16 +88,16 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.medDg.DefaultCellStyle = dataGridViewCellStyle3;
-            this.medDg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.medDg.EnableHeadersVisualStyles = false;
-            this.medDg.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(182)))), ((int)(((byte)(209)))));
-            this.medDg.Location = new System.Drawing.Point(0, 74);
-            this.medDg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.medDg.Name = "medDg";
-            this.medDg.ReadOnly = true;
-            this.medDg.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.medDg.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.symptomsDg.DefaultCellStyle = dataGridViewCellStyle3;
+            this.symptomsDg.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.symptomsDg.EnableHeadersVisualStyles = false;
+            this.symptomsDg.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(182)))), ((int)(((byte)(209)))));
+            this.symptomsDg.Location = new System.Drawing.Point(0, 74);
+            this.symptomsDg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.symptomsDg.Name = "symptomsDg";
+            this.symptomsDg.ReadOnly = true;
+            this.symptomsDg.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.symptomsDg.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -106,53 +106,55 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.medDg.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.medDg.RowHeadersVisible = false;
-            this.medDg.RowHeadersWidth = 51;
+            this.symptomsDg.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.symptomsDg.RowHeadersVisible = false;
+            this.symptomsDg.RowHeadersWidth = 51;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(5);
-            this.medDg.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.medDg.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.medDg.RowTemplate.Height = 27;
-            this.medDg.Size = new System.Drawing.Size(1302, 796);
-            this.medDg.TabIndex = 9;
-            this.medDg.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.user_CellContentClick);
-            this.medDg.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.user_CellMouseClick);
+            this.symptomsDg.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.symptomsDg.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.symptomsDg.RowTemplate.Height = 27;
+            this.symptomsDg.Size = new System.Drawing.Size(1302, 796);
+            this.symptomsDg.TabIndex = 9;
+            this.symptomsDg.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.user_CellContentClick);
+            this.symptomsDg.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.user_CellMouseClick);
             // 
-            // ID
+            // symptomsID
             // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ID.HeaderText = "#";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 71;
+            this.symptomsID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.symptomsID.FillWeight = 20F;
+            this.symptomsID.HeaderText = "#";
+            this.symptomsID.MinimumWidth = 4;
+            this.symptomsID.Name = "symptomsID";
+            this.symptomsID.ReadOnly = true;
             // 
-            // medicine
+            // symptomsGV
             // 
-            this.medicine.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.medicine.HeaderText = "Medicine";
-            this.medicine.MinimumWidth = 6;
-            this.medicine.Name = "medicine";
-            this.medicine.ReadOnly = true;
+            this.symptomsGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.symptomsGV.FillWeight = 124.1379F;
+            this.symptomsGV.HeaderText = "Symptoms";
+            this.symptomsGV.MinimumWidth = 6;
+            this.symptomsGV.Name = "symptomsGV";
+            this.symptomsGV.ReadOnly = true;
             // 
-            // company
+            // diseaseGV
             // 
-            this.company.HeaderText = "Company";
-            this.company.MinimumWidth = 6;
-            this.company.Name = "company";
-            this.company.ReadOnly = true;
+            this.diseaseGV.HeaderText = "Disease";
+            this.diseaseGV.MinimumWidth = 8;
+            this.diseaseGV.Name = "diseaseGV";
+            this.diseaseGV.ReadOnly = true;
             // 
-            // type
+            // diseaseIDGV
             // 
-            this.type.HeaderText = "Type";
-            this.type.MinimumWidth = 6;
-            this.type.Name = "type";
-            this.type.ReadOnly = true;
+            this.diseaseIDGV.HeaderText = "DiseaseID";
+            this.diseaseIDGV.MinimumWidth = 8;
+            this.diseaseIDGV.Name = "diseaseIDGV";
+            this.diseaseIDGV.ReadOnly = true;
+            this.diseaseIDGV.Visible = false;
             // 
             // delete
             // 
-            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.delete.HeaderText = "❌";
             this.delete.MinimumWidth = 6;
             this.delete.Name = "delete";
@@ -174,9 +176,9 @@
             // 
             // search
             // 
-            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.search.Animated = true;
             this.search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(161)))));
             this.search.BorderRadius = 3;
             this.search.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -254,17 +256,17 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 519;
             // 
-            // MedicineForm
+            // SymptomsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1302, 870);
-            this.Controls.Add(this.medDg);
+            this.Controls.Add(this.symptomsDg);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "MedicineForm";
-            this.Text = "Users";
-            ((System.ComponentModel.ISupportInitialize)(this.medDg)).EndInit();
+            this.Name = "SymptomsForm";
+            this.Text = "Roles";
+            ((System.ComponentModel.ISupportInitialize)(this.symptomsDg)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -273,16 +275,16 @@
         #endregion
 
         private FontAwesome.Sharp.IconButton iconButton2;
-        public System.Windows.Forms.DataGridView medDg;
+        public System.Windows.Forms.DataGridView symptomsDg;
         private System.Windows.Forms.Panel panel1;
         public FontAwesome.Sharp.IconButton iconButton1;
         private Guna.UI2.WinForms.Guna2TextBox search;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn medicine;
-        private System.Windows.Forms.DataGridViewTextBoxColumn company;
-        private System.Windows.Forms.DataGridViewTextBoxColumn type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn symptomsID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn symptomsGV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diseaseGV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diseaseIDGV;
         private System.Windows.Forms.DataGridViewCheckBoxColumn delete;
     }
 }

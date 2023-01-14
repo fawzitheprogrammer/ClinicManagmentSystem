@@ -257,11 +257,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classses\openFormClass.cs" />
+    <Compile Include="FormAdd\DiseaseAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd\DiseaseAdd.Designer.cs">
+      <DependentUpon>DiseaseAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAdd\MedicineAdd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAdd\MedicineAdd.Designer.cs">
       <DependentUpon>MedicineAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd\PatientAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd\PatientAdd.Designer.cs">
+      <DependentUpon>PatientAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="FormAdd\RolesAdd.cs">
       <SubType>Form</SubType>
@@ -275,6 +287,12 @@
     <Compile Include="FormAdd\StaffMemberAdd.Designer.cs">
       <DependentUpon>StaffMemberAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAdd\SymptomsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd\SymptomsAdd.Designer.cs">
+      <DependentUpon>SymptomsAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ConnectionForrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,6 +304,18 @@
     </Compile>
     <Compile Include="Forms\DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DiseasesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DiseasesForm.Designer.cs">
+      <DependentUpon>DiseasesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
@@ -299,11 +329,17 @@
     <Compile Include="Forms\MedicineForm.Designer.cs">
       <DependentUpon>MedicineForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Roles.cs">
+    <Compile Include="Forms\PatientForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Roles.Designer.cs">
-      <DependentUpon>Roles.cs</DependentUpon>
+    <Compile Include="Forms\PatientForm.Designer.cs">
+      <DependentUpon>PatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RolesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RolesForm.Designer.cs">
+      <DependentUpon>RolesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\StaffMemeberForm.cs">
       <SubType>Form</SubType>
@@ -311,10 +347,22 @@
     <Compile Include="Forms\StaffMemeberForm.Designer.cs">
       <DependentUpon>StaffMemeberForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SymptomsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SymptomsForm.Designer.cs">
+      <DependentUpon>SymptomsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdd\DiseaseAdd.resx">
+      <DependentUpon>DiseaseAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAdd\MedicineAdd.resx">
       <DependentUpon>MedicineAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd\PatientAdd.resx">
+      <DependentUpon>PatientAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdd\RolesAdd.resx">
       <DependentUpon>RolesAdd.cs</DependentUpon>
@@ -322,11 +370,20 @@
     <EmbeddedResource Include="FormAdd\StaffMemberAdd.resx">
       <DependentUpon>StaffMemberAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd\SymptomsAdd.resx">
+      <DependentUpon>SymptomsAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConnectionForrm.resx">
       <DependentUpon>ConnectionForrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DiseasesForm.resx">
+      <DependentUpon>DiseasesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -334,11 +391,17 @@
     <EmbeddedResource Include="Forms\MedicineForm.resx">
       <DependentUpon>MedicineForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Roles.resx">
-      <DependentUpon>Roles.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\PatientForm.resx">
+      <DependentUpon>PatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RolesForm.resx">
+      <DependentUpon>RolesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StaffMemeberForm.resx">
       <DependentUpon>StaffMemeberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SymptomsForm.resx">
+      <DependentUpon>SymptomsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

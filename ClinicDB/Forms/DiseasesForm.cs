@@ -14,10 +14,10 @@ using System.Windows.Forms;
 
 namespace ClinicDB
 {
-    public partial class MedicineForm : Form
+    public partial class DiseasesForm : Form
     {
        
-        public MedicineForm()
+        public DiseasesForm()
         {
             InitializeComponent();
             loadData();
@@ -26,12 +26,9 @@ namespace ClinicDB
         public void loadData()
         {
             ListBox listBox = new ListBox();
-            listBox.Items.Add(ID);
-            listBox.Items.Add(medicine);
-            listBox.Items.Add(company);
-            listBox.Items.Add(type);
-
-            CRUD.crud.loadData("st_getMed", medDg, listBox);
+            listBox.Items.Add(diseaseID);
+            listBox.Items.Add(diseaseGV);
+            CRUD.crud.loadData("st_getDisease", rolesDg, listBox);
         }
 
         public void searchData()
@@ -43,19 +40,18 @@ namespace ClinicDB
             else
             {
                 ListBox listBox = new ListBox();
-                listBox.Items.Add(ID);
-                listBox.Items.Add(medicine);
-                listBox.Items.Add(company);
-                listBox.Items.Add(type);
-                CRUD.crud.searchData("st_searchMed", medDg, listBox, search.Text);
+
+                listBox.Items.Add(diseaseID);
+                listBox.Items.Add(diseaseGV);
+                CRUD.crud.searchData("st_seacrhDisease", rolesDg, listBox, search.Text);
             }
         }
         private void iconButton1_Click(object sender, EventArgs e)
         {
 
-            MedicineAdd medAdd = new MedicineAdd(this);
-            medAdd.rjButton1.Enabled = false;
-            openFormClass.getForm(medAdd, true);
+            DiseaseAdd diseaseAdd = new DiseaseAdd(this);
+            diseaseAdd.rjButton1.Enabled = false;
+            openFormClass.getForm(diseaseAdd, true);
 
         }
 
@@ -68,38 +64,34 @@ namespace ClinicDB
         {
             try
             {
-                DataGridViewRow row = medDg.Rows[e.RowIndex];
+                DataGridViewRow row = rolesDg.Rows[e.RowIndex];
 
                 if (row.Index != -1)
                 {
 
-                    if (medDg.Columns[e.ColumnIndex].Name == "delete")
+                    if (rolesDg.Columns[e.ColumnIndex].Name == "delete")
 
                     {
 
                         Hashtable ht = new Hashtable();
-                        ht.Add("@id", Convert.ToInt32(row.Cells["ID"].Value.ToString()));
+                        ht.Add("@id", Convert.ToInt32(row.Cells["diseaseID"].Value.ToString()));
 
 
-                        crud.DataInsertUpdateDelete("st_deleteMed", ht, "Data deleted");
+                        crud.DataInsertUpdateDelete("st_deleteDisease", ht, "Data deleted");
                         loadData();
 
 
                     }
                     else
                     {
-                        MedicineAdd medAdd = new MedicineAdd(this);
-                        medAdd.btnSave.Enabled = false;
+                        DiseaseAdd diseaseAdd = new DiseaseAdd(this);
+                        diseaseAdd.btnSave.Enabled = false;
                         if (e.RowIndex != -1 && e.ColumnIndex != -1)
                         {
-                            medAdd.roleID = Convert.ToInt32(row.Cells["ID"].Value.ToString());
-                            medAdd.medTxt.Texts = row.Cells["medicine"].Value.ToString();
-                            medAdd.comTxt.Texts = row.Cells["company"].Value.ToString();
-                            medAdd.type.Text = row.Cells["type"].Value.ToString();
-                            //medAdd.type.Text = row.Cells["id"].Value.ToString();
-
+                            diseaseAdd.roleID = Convert.ToInt32(row.Cells["diseaseID"].Value.ToString());
+                            diseaseAdd.disText.Texts = row.Cells["diseaseGV"].Value.ToString();
                         }
-                            openFormClass.getForm(medAdd, true);
+                        openFormClass.getForm(diseaseAdd, true);
                     }
                 }
             }catch (Exception)
@@ -117,7 +109,7 @@ namespace ClinicDB
 
         private void search_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)13)
+            if(e.KeyChar == (char)13)
             {
                 searchData();
             }

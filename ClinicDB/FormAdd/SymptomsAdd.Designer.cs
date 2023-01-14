@@ -1,6 +1,6 @@
 ﻿namespace ClinicDB
 {
-    partial class RolesAdd
+    partial class SymptomsAdd
     {
         /// <summary>
         /// Required designer variable.
@@ -29,24 +29,42 @@
         private void InitializeComponent()
         {
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.disCombo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnSave = new CustomControls.RJControls.RJButton();
-            this.roleText = new RJCodeAdvance.RJControls.RJTextBox();
+            this.disText = new RJCodeAdvance.RJControls.RJTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
             // 
+            this.mainPanel.Controls.Add(this.label5);
             this.mainPanel.Controls.Add(this.rjButton1);
+            this.mainPanel.Controls.Add(this.disCombo);
             this.mainPanel.Controls.Add(this.btnSave);
-            this.mainPanel.Controls.Add(this.roleText);
+            this.mainPanel.Controls.Add(this.disText);
             this.mainPanel.Controls.Add(this.label2);
             this.mainPanel.Location = new System.Drawing.Point(34, 55);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(434, 489);
+            this.mainPanel.Size = new System.Drawing.Size(434, 642);
             this.mainPanel.TabIndex = 25;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
+            this.label5.Location = new System.Drawing.Point(36, 227);
+            this.label5.Margin = new System.Windows.Forms.Padding(0);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label5.Size = new System.Drawing.Size(102, 25);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "DISEASE";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // rjButton1
             // 
@@ -59,7 +77,7 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(42, 335);
+            this.rjButton1.Location = new System.Drawing.Point(41, 529);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(348, 64);
@@ -68,6 +86,33 @@
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click_1);
+            // 
+            // disCombo
+            // 
+            this.disCombo.BackColor = System.Drawing.Color.Transparent;
+            this.disCombo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
+            this.disCombo.BorderThickness = 2;
+            this.disCombo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.disCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.disCombo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.disCombo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.disCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.disCombo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.disCombo.ItemHeight = 50;
+            this.disCombo.ItemsAppearance.Font = new System.Drawing.Font("Poppins", 12F);
+            this.disCombo.ItemsAppearance.ForeColor = System.Drawing.Color.Black;
+            this.disCombo.ItemsAppearance.SelectedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
+            this.disCombo.ItemsAppearance.SelectedFont = new System.Drawing.Font("Poppins Medium", 12F);
+            this.disCombo.ItemsAppearance.SelectedForeColor = System.Drawing.Color.White;
+            this.disCombo.Location = new System.Drawing.Point(41, 274);
+            this.disCombo.Margin = new System.Windows.Forms.Padding(0);
+            this.disCombo.Name = "disCombo";
+            this.disCombo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.disCombo.Size = new System.Drawing.Size(349, 56);
+            this.disCombo.Sorted = true;
+            this.disCombo.TabIndex = 26;
+            this.disCombo.Tag = "";
+            this.disCombo.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
             // btnSave
             // 
@@ -80,7 +125,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(42, 251);
+            this.btnSave.Location = new System.Drawing.Point(41, 445);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(348, 64);
@@ -90,27 +135,27 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // roleText
+            // disText
             // 
-            this.roleText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.roleText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.roleText.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
-            this.roleText.BorderRadius = 0;
-            this.roleText.BorderSize = 2;
-            this.roleText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roleText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.roleText.Location = new System.Drawing.Point(42, 101);
-            this.roleText.Margin = new System.Windows.Forms.Padding(0);
-            this.roleText.Multiline = true;
-            this.roleText.Name = "roleText";
-            this.roleText.Padding = new System.Windows.Forms.Padding(11, 9, 11, 9);
-            this.roleText.PasswordChar = false;
-            this.roleText.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.roleText.PlaceholderText = "";
-            this.roleText.Size = new System.Drawing.Size(348, 58);
-            this.roleText.TabIndex = 22;
-            this.roleText.Texts = "";
-            this.roleText.UnderlinedStyle = true;
+            this.disText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.disText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.disText.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
+            this.disText.BorderRadius = 0;
+            this.disText.BorderSize = 2;
+            this.disText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.disText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.disText.Location = new System.Drawing.Point(42, 101);
+            this.disText.Margin = new System.Windows.Forms.Padding(0);
+            this.disText.Multiline = true;
+            this.disText.Name = "disText";
+            this.disText.Padding = new System.Windows.Forms.Padding(11, 9, 11, 9);
+            this.disText.PasswordChar = false;
+            this.disText.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.disText.PlaceholderText = "";
+            this.disText.Size = new System.Drawing.Size(348, 58);
+            this.disText.TabIndex = 22;
+            this.disText.Texts = "";
+            this.disText.UnderlinedStyle = true;
             // 
             // label2
             // 
@@ -119,24 +164,25 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
             this.label2.Location = new System.Drawing.Point(36, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 25);
+            this.label2.Size = new System.Drawing.Size(134, 25);
             this.label2.TabIndex = 23;
-            this.label2.Text = "Role";
+            this.label2.Text = "SYMPTOMS";
             // 
-            // RolesAdd
+            // SymptomsAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 609);
+            this.ClientSize = new System.Drawing.Size(521, 726);
             this.Controls.Add(this.mainPanel);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(543, 665);
+            this.MaximumSize = new System.Drawing.Size(543, 782);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(543, 665);
-            this.Name = "RolesAdd";
+            this.MinimumSize = new System.Drawing.Size(543, 782);
+            this.Name = "SymptomsAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Roles Add";
+            this.Text = "Symptoms Add";
+            this.Load += new System.EventHandler(this.SymptomsAdd_Load);
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -147,7 +193,9 @@
         private System.Windows.Forms.Panel mainPanel;
         public CustomControls.RJControls.RJButton rjButton1;
         public CustomControls.RJControls.RJButton btnSave;
-        public RJCodeAdvance.RJControls.RJTextBox roleText;
+        public RJCodeAdvance.RJControls.RJTextBox disText;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
+        public Guna.UI2.WinForms.Guna2ComboBox disCombo;
     }
 }

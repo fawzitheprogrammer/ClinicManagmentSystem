@@ -74,6 +74,32 @@ namespace ClinicD.FormAdd
         {
 
         }
+
+        private void update_Click(object sender, EventArgs e)
+        {
+            if(mainClass.checkControls(panel1).Count > 0)
+            {
+
+            }
+            else
+            {
+                Hashtable ht = new Hashtable();
+                ht.Add("@name", fullnameTxt.Texts);
+                ht.Add("@username", userNameTxt.Texts);
+                ht.Add("@password", passwordTxt.Texts);
+                ht.Add("@phone", phoneTxt.Texts);
+                ht.Add("@address", addressTxt.Texts);
+                ht.Add("@roleID", Convert.ToInt32(roles.SelectedValue.ToString()));
+                ht.Add("@id", usersID);
+
+
+
+                string theRecord = fullnameTxt.Texts + " updated successfully in the system.";
+                CRUD.crud.DataInsertUpdateDelete("st_updateUsers", ht, theRecord);
+                staffMember.loadData();
+                this.Close();
+            }
+        }
     }
 }
 

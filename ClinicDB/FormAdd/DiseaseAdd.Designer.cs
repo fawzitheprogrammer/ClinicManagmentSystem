@@ -1,6 +1,6 @@
 ﻿namespace ClinicDB
 {
-    partial class RolesAdd
+    partial class DiseaseAdd
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.mainPanel = new System.Windows.Forms.Panel();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.btnSave = new CustomControls.RJControls.RJButton();
-            this.roleText = new RJCodeAdvance.RJControls.RJTextBox();
+            this.disText = new RJCodeAdvance.RJControls.RJTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
@@ -40,7 +40,7 @@
             // 
             this.mainPanel.Controls.Add(this.rjButton1);
             this.mainPanel.Controls.Add(this.btnSave);
-            this.mainPanel.Controls.Add(this.roleText);
+            this.mainPanel.Controls.Add(this.disText);
             this.mainPanel.Controls.Add(this.label2);
             this.mainPanel.Location = new System.Drawing.Point(34, 55);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -90,27 +90,27 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // roleText
+            // disText
             // 
-            this.roleText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.roleText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.roleText.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
-            this.roleText.BorderRadius = 0;
-            this.roleText.BorderSize = 2;
-            this.roleText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roleText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.roleText.Location = new System.Drawing.Point(42, 101);
-            this.roleText.Margin = new System.Windows.Forms.Padding(0);
-            this.roleText.Multiline = true;
-            this.roleText.Name = "roleText";
-            this.roleText.Padding = new System.Windows.Forms.Padding(11, 9, 11, 9);
-            this.roleText.PasswordChar = false;
-            this.roleText.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.roleText.PlaceholderText = "";
-            this.roleText.Size = new System.Drawing.Size(348, 58);
-            this.roleText.TabIndex = 22;
-            this.roleText.Texts = "";
-            this.roleText.UnderlinedStyle = true;
+            this.disText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.disText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.disText.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
+            this.disText.BorderRadius = 0;
+            this.disText.BorderSize = 2;
+            this.disText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.disText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.disText.Location = new System.Drawing.Point(42, 101);
+            this.disText.Margin = new System.Windows.Forms.Padding(0);
+            this.disText.Multiline = true;
+            this.disText.Name = "disText";
+            this.disText.Padding = new System.Windows.Forms.Padding(11, 9, 11, 9);
+            this.disText.PasswordChar = false;
+            this.disText.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.disText.PlaceholderText = "";
+            this.disText.Size = new System.Drawing.Size(348, 58);
+            this.disText.TabIndex = 22;
+            this.disText.Texts = "";
+            this.disText.UnderlinedStyle = true;
             // 
             // label2
             // 
@@ -119,11 +119,11 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
             this.label2.Location = new System.Drawing.Point(36, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 25);
+            this.label2.Size = new System.Drawing.Size(90, 25);
             this.label2.TabIndex = 23;
-            this.label2.Text = "Role";
+            this.label2.Text = "Disease";
             // 
-            // RolesAdd
+            // DiseaseAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -134,9 +134,9 @@
             this.MaximumSize = new System.Drawing.Size(543, 665);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(543, 665);
-            this.Name = "RolesAdd";
+            this.Name = "DiseaseAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Roles Add";
+            this.Text = "Disease Add";
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -147,7 +147,7 @@
         private System.Windows.Forms.Panel mainPanel;
         public CustomControls.RJControls.RJButton rjButton1;
         public CustomControls.RJControls.RJButton btnSave;
-        public RJCodeAdvance.RJControls.RJTextBox roleText;
+        public RJCodeAdvance.RJControls.RJTextBox disText;
         private System.Windows.Forms.Label label2;
     }
 }

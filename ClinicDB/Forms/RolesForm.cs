@@ -30,6 +30,22 @@ namespace ClinicDB
             listBox.Items.Add(roleGV);
             CRUD.crud.loadData("st_getRoles", rolesDg, listBox);
         }
+
+        public void searchData()
+        {
+            if (search.Text == "" || search.Text == null)
+            {
+                loadData();
+            }
+            else
+            {
+                ListBox listBox = new ListBox();
+
+                listBox.Items.Add(roleIDGV);
+                listBox.Items.Add(roleGV);
+                CRUD.crud.searchData("st_searchRoles", rolesDg, listBox, search.Text);
+            }
+        }
         private void iconButton1_Click(object sender, EventArgs e)
         {
 
@@ -87,19 +103,16 @@ namespace ClinicDB
         private void iconButton2_Click(object sender, EventArgs e)
         {
 
-            if (search.Text == "" || search.Text == null)
-            {
-                loadData();
-            }
-            else
-            {
-                ListBox listBox = new ListBox();
+            searchData();
 
-                listBox.Items.Add(roleIDGV);
-                listBox.Items.Add(roleGV);
-                CRUD.crud.searchData("st_searchRoles", rolesDg,listBox, search.Text);
-            }
+        }
 
+        private void search_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)13)
+            {
+                searchData();
+            }
         }
     }
 }

@@ -50,9 +50,10 @@
             this.mainPanel.Controls.Add(this.btnSave);
             this.mainPanel.Controls.Add(this.medTxt);
             this.mainPanel.Controls.Add(this.label2);
-            this.mainPanel.Location = new System.Drawing.Point(30, 44);
+            this.mainPanel.Location = new System.Drawing.Point(34, 55);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(386, 577);
+            this.mainPanel.Size = new System.Drawing.Size(434, 721);
             this.mainPanel.TabIndex = 25;
             // 
             // label5
@@ -60,11 +61,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins", 10.2F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label5.Location = new System.Drawing.Point(35, 290);
+            this.label5.Location = new System.Drawing.Point(39, 362);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(50, 26);
+            this.label5.Size = new System.Drawing.Size(63, 37);
             this.label5.TabIndex = 31;
             this.label5.Text = "TYPE";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -85,11 +86,11 @@
             "External",
             "Internal"});
             this.type.ItemsAppearance.ForeColor = System.Drawing.Color.Black;
-            this.type.Location = new System.Drawing.Point(37, 327);
+            this.type.Location = new System.Drawing.Point(42, 409);
             this.type.Margin = new System.Windows.Forms.Padding(0);
             this.type.Name = "type";
             this.type.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.type.Size = new System.Drawing.Size(309, 56);
+            this.type.Size = new System.Drawing.Size(347, 56);
             this.type.Sorted = true;
             this.type.TabIndex = 30;
             this.type.Tag = "";
@@ -104,15 +105,15 @@
             this.comTxt.BorderSize = 2;
             this.comTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.comTxt.Location = new System.Drawing.Point(37, 185);
+            this.comTxt.Location = new System.Drawing.Point(42, 231);
             this.comTxt.Margin = new System.Windows.Forms.Padding(0);
             this.comTxt.Multiline = true;
             this.comTxt.Name = "comTxt";
-            this.comTxt.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.comTxt.Padding = new System.Windows.Forms.Padding(11, 9, 11, 9);
             this.comTxt.PasswordChar = false;
             this.comTxt.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.comTxt.PlaceholderText = "";
-            this.comTxt.Size = new System.Drawing.Size(309, 46);
+            this.comTxt.Size = new System.Drawing.Size(348, 58);
             this.comTxt.TabIndex = 28;
             this.comTxt.Texts = "";
             this.comTxt.UnderlinedStyle = true;
@@ -122,9 +123,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins", 10.2F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label1.Location = new System.Drawing.Point(32, 155);
+            this.label1.Location = new System.Drawing.Point(36, 194);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 26);
+            this.label1.Size = new System.Drawing.Size(121, 37);
             this.label1.TabIndex = 29;
             this.label1.Text = "COMPANY";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -140,9 +141,10 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Poppins", 10.8F);
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(37, 493);
+            this.rjButton1.Location = new System.Drawing.Point(42, 616);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(309, 51);
+            this.rjButton1.Size = new System.Drawing.Size(348, 64);
             this.rjButton1.TabIndex = 27;
             this.rjButton1.Text = "Update";
             this.rjButton1.TextColor = System.Drawing.Color.White;
@@ -160,9 +162,10 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Poppins", 10.8F);
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(37, 426);
+            this.btnSave.Location = new System.Drawing.Point(42, 532);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(309, 51);
+            this.btnSave.Size = new System.Drawing.Size(348, 64);
             this.btnSave.TabIndex = 26;
             this.btnSave.Text = "Save";
             this.btnSave.TextColor = System.Drawing.Color.White;
@@ -178,15 +181,15 @@
             this.medTxt.BorderSize = 2;
             this.medTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.medTxt.Location = new System.Drawing.Point(37, 59);
+            this.medTxt.Location = new System.Drawing.Point(42, 74);
             this.medTxt.Margin = new System.Windows.Forms.Padding(0);
             this.medTxt.Multiline = true;
             this.medTxt.Name = "medTxt";
-            this.medTxt.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.medTxt.Padding = new System.Windows.Forms.Padding(11, 9, 11, 9);
             this.medTxt.PasswordChar = false;
             this.medTxt.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.medTxt.PlaceholderText = "";
-            this.medTxt.Size = new System.Drawing.Size(309, 46);
+            this.medTxt.Size = new System.Drawing.Size(348, 58);
             this.medTxt.TabIndex = 22;
             this.medTxt.Texts = "";
             this.medTxt.UnderlinedStyle = true;
@@ -196,23 +199,26 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins", 10.2F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label2.Location = new System.Drawing.Point(32, 29);
+            this.label2.Location = new System.Drawing.Point(36, 36);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 26);
+            this.label2.Size = new System.Drawing.Size(113, 37);
             this.label2.TabIndex = 23;
             this.label2.Text = "MEDICINE";
             // 
             // MedicineAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 669);
+            this.ClientSize = new System.Drawing.Size(521, 836);
             this.Controls.Add(this.mainPanel);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(543, 892);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(543, 892);
             this.Name = "MedicineAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "  ";
+            this.Text = "Medicine Add";
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             this.ResumeLayout(false);

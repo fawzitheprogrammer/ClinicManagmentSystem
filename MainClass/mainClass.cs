@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using System.Collections;
 using System.Drawing;
 using RJCodeAdvance.RJControls;
+using Guna.UI2.WinForms;
 
 namespace MainClass
 {
@@ -43,15 +44,22 @@ namespace MainClass
 
         public static SqlConnection con = new SqlConnection(connectionString());
 
-        public static void showMessage(string text, bool isSuccess)
+        public static void showMessage(string text, bool? isSuccess)
         {
-            if (isSuccess == true)
+            if (text == "")
             {
-                MessageBox.Show(text, "Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                return;
             }
             else
             {
-                MessageBox.Show(text, "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (isSuccess == true)
+                {
+                    MessageBox.Show(text, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show(text, "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -99,6 +107,29 @@ namespace MainClass
                             }
                         }
                         tb.BorderColor = tb.Texts == "" ? tb.BorderColor = Color.Firebrick : tb.BorderColor = Color.Blue;
+                    }
+                }
+                if (c is Guna2ComboBox)
+                {
+                    Guna2ComboBox tb = (Guna2ComboBox)c;
+                    if (tb.AllowDrop == true)
+                    {
+
+                    }
+                    else
+                    {
+                        if (tb.SelectedIndex<0)
+                        {
+                            arr.Add(tb);
+                        }
+                        else
+                        {
+                            if (arr.Contains(tb))
+                            {
+                                arr.Remove(tb);
+                            }
+                        }
+                        tb.BorderColor = tb.Text == "" ? tb.BorderColor = Color.Firebrick : tb.BorderColor = Color.Blue;
                     }
                 }
             }

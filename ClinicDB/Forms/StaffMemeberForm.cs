@@ -1,15 +1,8 @@
 ﻿using ClinicD.FormAdd;
 using CRUD;
-using MainClass;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ClinicDB.Forms
@@ -35,6 +28,35 @@ namespace ClinicDB.Forms
             listBox.Items.Add(Roles);
 
             CRUD.crud.loadData("st_getUsers", usersDG, listBox);
+        }
+
+        public  void searchData()
+        {
+            try
+            {
+                if (search.Text == "" || search.Text == null)
+                {
+                    loadData();
+                }
+                else
+                {
+                    ListBox listBox = new ListBox();
+
+                    listBox.Items.Add(ID);
+                    listBox.Items.Add(Names);
+                    listBox.Items.Add(Username);
+                    listBox.Items.Add(Password);
+                    listBox.Items.Add(Phone);
+                    listBox.Items.Add(Address);
+                    listBox.Items.Add(RoleID);
+                    listBox.Items.Add(Roles);
+                    CRUD.crud.searchData("st_searchUser", usersDG, listBox, search.Text);
+                }
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -100,34 +122,15 @@ namespace ClinicDB.Forms
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (search.Text == "" || search.Text == null)
-                {
-                    loadData();
-                }
-                else
-                {
-                    ListBox listBox = new ListBox();
-
-                    listBox.Items.Add(ID);
-                    listBox.Items.Add(Names);
-                    listBox.Items.Add(Username);
-                    listBox.Items.Add(Password);
-                    listBox.Items.Add(Phone);
-                    listBox.Items.Add(Address);
-                    listBox.Items.Add(Roles);
-                    CRUD.crud.searchData("st_searchUser", usersDG, listBox, search.Text);
-                }
-            }
-            catch (Exception)
-            {
-
-            }
+            searchData();
         }
 
-        private void search_TextChanged(object sender, EventArgs e)
+        private void search_KeyPress_1(object sender, KeyPressEventArgs e)
         {
+            if (e.KeyChar == (char)13)
+            {
+                searchData();
+            }
         }
     }
 }

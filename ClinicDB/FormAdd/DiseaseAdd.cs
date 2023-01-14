@@ -14,17 +14,17 @@ using System.Collections;
 
 namespace ClinicDB
 {
-    public partial class MedicineAdd : Form
+    public partial class DiseaseAdd : Form
     {
 
-        ClinicDB.MedicineForm meds;
+        ClinicDB.DiseasesForm dis;
 
         public int roleID;
 
-        public MedicineAdd(ClinicDB.MedicineForm med)
+        public DiseaseAdd(ClinicDB.DiseasesForm diseas)
         {
             InitializeComponent();
-            meds = med;
+            dis = diseas;
         }
 
       
@@ -40,13 +40,11 @@ namespace ClinicDB
             {
 
                 Hashtable ht = new Hashtable();
-                ht.Add("@medName", medTxt.Texts);
-                ht.Add("@medCom", comTxt.Texts);
-                ht.Add("@medType", type.SelectedItem.ToString());
+                ht.Add("@name", disText.Texts);
 
-                crud.DataInsertUpdateDelete("st_insertMed", ht, "Data inserted");
+                crud.DataInsertUpdateDelete("st_insertDisease", ht, "Data inserted");
                 mainClass.resetEnable(mainPanel);
-                meds.loadData();
+                dis.loadData();
             }
         }
 
@@ -54,21 +52,20 @@ namespace ClinicDB
         {
 
             Hashtable ht = new Hashtable();
-            ht.Add("@medName", medTxt.Texts);
-            ht.Add("@medCom", comTxt.Texts);
-            ht.Add("@medType", type.SelectedItem.ToString());
+            ht.Add("@name", disText.Texts);
             ht.Add("@id", roleID);
 
+            /*   ListBox paramList = new ListBox();
+               paramList.Items.Add("@name");
+               paramList.Items.Add("@id");
+               ListBox valueList = new ListBox();
+               valueList.Items.Add(roleText.Texts);
+               valueList.Items.Add(roleID);*/
 
-            string theRecord = medTxt.Texts + " updated successfully in the system.";
-            crud.DataInsertUpdateDelete("st_updateMed", ht,theRecord);
-            meds.loadData();
+            string theRecord = disText.Texts + " updated successfully in the system.";
+            crud.DataInsertUpdateDelete("st_updateDisease", ht,theRecord);
+            dis.loadData();
             this.Close();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

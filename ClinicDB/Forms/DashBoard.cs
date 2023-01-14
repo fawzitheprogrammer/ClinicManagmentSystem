@@ -22,7 +22,7 @@ namespace ClinicDB.Forms
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(10, 80);
+            leftBorderBtn.Size = new Size(sickbtn.Size.Width-806,sickbtn.Height);
             menuPanel.Controls.Add(leftBorderBtn);
             //Form
             this.Text = string.Empty;
@@ -105,8 +105,10 @@ namespace ClinicDB.Forms
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
+            DashboardForm dash = new DashboardForm();
+            OpenChildForm(dash);
             ActivateButton(sender, Color.White);
-          
+
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
@@ -119,6 +121,8 @@ namespace ClinicDB.Forms
 
         private void disbtn_Click(object sender, EventArgs e)
         {
+            PatientForm patient = new PatientForm();
+            OpenChildForm(patient);
             ActivateButton(sender, Color.White);
 
         }
@@ -192,23 +196,32 @@ namespace ClinicDB.Forms
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void mainFormId_Load(object sender, EventArgs e)
         {
-
+            dashbtn.PerformClick();
         }
 
         private void sickbtn_Click_1(object sender, EventArgs e)
         {
-
+            SymptomsForm symptoms = new SymptomsForm();
+            OpenChildForm(symptoms);
+            ActivateButton(sender, Color.White);
         }
 
         private void phonNum_Click(object sender, EventArgs e)
         {
             Roles roles = new Roles();
             OpenChildForm(roles);
+            ActivateButton(sender, Color.White);
+        }
+
+        private void iconButton2_Click_1(object sender, EventArgs e)
+        {
+            DiseasesForm diseasesForm = new DiseasesForm();
+            OpenChildForm(diseasesForm);
             ActivateButton(sender, Color.White);
         }
     }

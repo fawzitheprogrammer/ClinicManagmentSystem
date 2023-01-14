@@ -42,6 +42,32 @@ namespace CRUD
             return res;
         }
 
+
+        public static object getLastID(string proc)
+        {
+
+            object o = null;
+            try
+            {
+                SqlCommand cmd = new SqlCommand(proc, mainClass.con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                mainClass.con.Open();
+
+                o = cmd.ExecuteScalar();
+
+                mainClass.con.Close();
+
+
+            }
+            catch (Exception ex)
+            {
+                 mainClass.showMessage(ex.ToString(), false);
+            }
+
+            return o;
+        }
+
         public static void loadData(string proc,DataGridView dg,ListBox listBox)
         {
             try

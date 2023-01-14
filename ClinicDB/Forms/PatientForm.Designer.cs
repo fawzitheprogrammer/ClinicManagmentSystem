@@ -1,6 +1,6 @@
 ﻿namespace ClinicDB.Forms
 {
-    partial class StaffMemeberForm
+    partial class PatientForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,11 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.usersDG = new System.Windows.Forms.DataGridView();
             this.tblStudentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tblStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
@@ -45,93 +43,24 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.patientDG = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Names = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Roles = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patientCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fatherCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TurnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.appointmentDateCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ageCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.doctorCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DoctorIDCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StatusCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stastusID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.delete = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.RoleID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.usersDG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.patientDG)).BeginInit();
             this.SuspendLayout();
-            // 
-            // usersDG
-            // 
-            this.usersDG.AllowUserToAddRows = false;
-            this.usersDG.AllowUserToDeleteRows = false;
-            this.usersDG.AllowUserToResizeColumns = false;
-            this.usersDG.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.usersDG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.usersDG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.usersDG.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.usersDG.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.usersDG.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.usersDG.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.usersDG.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            this.usersDG.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins Medium", 10F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.usersDG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.usersDG.ColumnHeadersHeight = 60;
-            this.usersDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.usersDG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Names,
-            this.Username,
-            this.Password,
-            this.Phone,
-            this.Address,
-            this.Roles,
-            this.delete,
-            this.RoleID});
-            this.usersDG.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.usersDG.DefaultCellStyle = dataGridViewCellStyle4;
-            this.usersDG.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usersDG.EnableHeadersVisualStyles = false;
-            this.usersDG.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(182)))), ((int)(((byte)(209)))));
-            this.usersDG.Location = new System.Drawing.Point(0, 74);
-            this.usersDG.Name = "usersDG";
-            this.usersDG.ReadOnly = true;
-            this.usersDG.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.usersDG.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.usersDG.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.usersDG.RowHeadersVisible = false;
-            this.usersDG.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(5);
-            this.usersDG.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.usersDG.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.usersDG.RowTemplate.Height = 27;
-            this.usersDG.Size = new System.Drawing.Size(1302, 796);
-            this.usersDG.TabIndex = 0;
-            this.usersDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.usersDG_CellContentClick);
             // 
             // tblStudentBindingSource1
             // 
@@ -247,6 +176,82 @@
             this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
             this.dataGridViewImageColumn3.Width = 150;
             // 
+            // patientDG
+            // 
+            this.patientDG.AllowUserToAddRows = false;
+            this.patientDG.AllowUserToDeleteRows = false;
+            this.patientDG.AllowUserToResizeColumns = false;
+            this.patientDG.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.patientDG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.patientDG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.patientDG.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.patientDG.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.patientDG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.patientDG.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.patientDG.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.patientDG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.patientDG.ColumnHeadersHeight = 60;
+            this.patientDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.patientDG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.patientCol,
+            this.fatherCol,
+            this.TurnNumber,
+            this.appointmentDateCol,
+            this.phoneCol,
+            this.ageCol,
+            this.doctorCol,
+            this.DoctorIDCol,
+            this.StatusCol,
+            this.stastusID,
+            this.delete});
+            this.patientDG.Cursor = System.Windows.Forms.Cursors.Default;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.patientDG.DefaultCellStyle = dataGridViewCellStyle3;
+            this.patientDG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.patientDG.EnableHeadersVisualStyles = false;
+            this.patientDG.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(182)))), ((int)(((byte)(209)))));
+            this.patientDG.Location = new System.Drawing.Point(0, 74);
+            this.patientDG.Name = "patientDG";
+            this.patientDG.ReadOnly = true;
+            this.patientDG.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.patientDG.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.patientDG.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.patientDG.RowHeadersVisible = false;
+            this.patientDG.RowHeadersWidth = 51;
+            this.patientDG.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(5);
+            this.patientDG.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.patientDG.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.patientDG.RowTemplate.Height = 27;
+            this.patientDG.Size = new System.Drawing.Size(1302, 796);
+            this.patientDG.TabIndex = 0;
+            this.patientDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientDG_CellContentClick);
+            // 
             // ID
             // 
             this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -256,61 +261,84 @@
             this.ID.ReadOnly = true;
             this.ID.Width = 71;
             // 
-            // Names
+            // patientCol
             // 
-            this.Names.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Names.HeaderText = "Name";
-            this.Names.MinimumWidth = 6;
-            this.Names.Name = "Names";
-            this.Names.ReadOnly = true;
+            this.patientCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.patientCol.HeaderText = "Patient";
+            this.patientCol.MinimumWidth = 6;
+            this.patientCol.Name = "patientCol";
+            this.patientCol.ReadOnly = true;
             // 
-            // Username
+            // fatherCol
             // 
-            this.Username.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Username.FillWeight = 63.07779F;
-            this.Username.HeaderText = "Username";
-            this.Username.MinimumWidth = 6;
-            this.Username.Name = "Username";
-            this.Username.ReadOnly = true;
+            this.fatherCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.fatherCol.HeaderText = "Father/Guardian";
+            this.fatherCol.MinimumWidth = 6;
+            this.fatherCol.Name = "fatherCol";
+            this.fatherCol.ReadOnly = true;
             // 
-            // Password
+            // TurnNumber
             // 
-            this.Password.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Password.HeaderText = "Password";
-            this.Password.MinimumWidth = 6;
-            this.Password.Name = "Password";
-            this.Password.ReadOnly = true;
+            this.TurnNumber.HeaderText = "Turn Number";
+            this.TurnNumber.MinimumWidth = 8;
+            this.TurnNumber.Name = "TurnNumber";
+            this.TurnNumber.ReadOnly = true;
             // 
-            // Phone
+            // appointmentDateCol
             // 
-            this.Phone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Phone.HeaderText = "Phone";
-            this.Phone.MinimumWidth = 6;
-            this.Phone.Name = "Phone";
-            this.Phone.ReadOnly = true;
+            this.appointmentDateCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.appointmentDateCol.HeaderText = "Appointment Date";
+            this.appointmentDateCol.MinimumWidth = 6;
+            this.appointmentDateCol.Name = "appointmentDateCol";
+            this.appointmentDateCol.ReadOnly = true;
             // 
-            // Address
+            // phoneCol
             // 
-            this.Address.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Format = "d";
-            dataGridViewCellStyle3.NullValue = null;
-            this.Address.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Address.FillWeight = 66.28049F;
-            this.Address.HeaderText = "Address";
-            this.Address.MaxInputLength = 5;
-            this.Address.MinimumWidth = 6;
-            this.Address.Name = "Address";
-            this.Address.ReadOnly = true;
-            this.Address.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.phoneCol.HeaderText = "Phone";
+            this.phoneCol.MinimumWidth = 8;
+            this.phoneCol.Name = "phoneCol";
+            this.phoneCol.ReadOnly = true;
             // 
-            // Roles
+            // ageCol
             // 
-            this.Roles.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Roles.FillWeight = 69.91109F;
-            this.Roles.HeaderText = "Role";
-            this.Roles.MinimumWidth = 6;
-            this.Roles.Name = "Roles";
-            this.Roles.ReadOnly = true;
+            this.ageCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ageCol.HeaderText = "Age";
+            this.ageCol.MinimumWidth = 6;
+            this.ageCol.Name = "ageCol";
+            this.ageCol.ReadOnly = true;
+            this.ageCol.Width = 94;
+            // 
+            // doctorCol
+            // 
+            this.doctorCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.doctorCol.FillWeight = 69.91109F;
+            this.doctorCol.HeaderText = "Doctor";
+            this.doctorCol.MinimumWidth = 6;
+            this.doctorCol.Name = "doctorCol";
+            this.doctorCol.ReadOnly = true;
+            // 
+            // DoctorIDCol
+            // 
+            this.DoctorIDCol.HeaderText = "DoctorI D";
+            this.DoctorIDCol.MinimumWidth = 6;
+            this.DoctorIDCol.Name = "DoctorIDCol";
+            this.DoctorIDCol.ReadOnly = true;
+            this.DoctorIDCol.Visible = false;
+            // 
+            // StatusCol
+            // 
+            this.StatusCol.HeaderText = "Status";
+            this.StatusCol.MinimumWidth = 8;
+            this.StatusCol.Name = "StatusCol";
+            this.StatusCol.ReadOnly = true;
+            // 
+            // stastusID
+            // 
+            this.stastusID.HeaderText = "StastusID";
+            this.stastusID.MinimumWidth = 8;
+            this.stastusID.Name = "stastusID";
+            this.stastusID.ReadOnly = true;
+            this.stastusID.Visible = false;
             // 
             // delete
             // 
@@ -323,27 +351,19 @@
             this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.delete.Width = 83;
             // 
-            // RoleID
-            // 
-            this.RoleID.HeaderText = "Role-ID";
-            this.RoleID.MinimumWidth = 6;
-            this.RoleID.Name = "RoleID";
-            this.RoleID.ReadOnly = true;
-            this.RoleID.Visible = false;
-            // 
-            // StaffMemeberForm
+            // PatientForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1302, 870);
-            this.Controls.Add(this.usersDG);
+            this.Controls.Add(this.patientDG);
             this.Controls.Add(this.panel1);
-            this.Name = "StaffMemeberForm";
-            this.Text = "Staff Member";
+            this.Name = "PatientForm";
+            this.Text = "Patient Form";
             this.Load += new System.EventHandler(this.StaffMemeberForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.usersDG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.patientDG)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -354,19 +374,22 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
-        public System.Windows.Forms.DataGridView usersDG;
         private System.Windows.Forms.BindingSource tblStudentBindingSource;
         private System.Windows.Forms.BindingSource tblStudentBindingSource1;
         public FontAwesome.Sharp.IconButton iconButton1;
         private Guna.UI2.WinForms.Guna2TextBox search;
+        public System.Windows.Forms.DataGridView patientDG;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Names;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Username;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Password;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Address;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Roles;
+        private System.Windows.Forms.DataGridViewTextBoxColumn patientCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fatherCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TurnNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn appointmentDateCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ageCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn doctorCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DoctorIDCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StatusCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stastusID;
         private System.Windows.Forms.DataGridViewCheckBoxColumn delete;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RoleID;
     }
 }
