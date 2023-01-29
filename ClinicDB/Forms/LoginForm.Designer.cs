@@ -185,7 +185,7 @@
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Padding = new System.Windows.Forms.Padding(40, 0, 40, 0);
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(246, 33);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(286, 41);
             this.guna2HtmlLabel2.TabIndex = 2;
             this.guna2HtmlLabel2.Text = "For a better health";
             this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -196,7 +196,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.ClientSize = new System.Drawing.Size(1103, 655);
+            this.ClientSize = new System.Drawing.Size(1099, 655);
             this.Controls.Add(this.loginPanel);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;

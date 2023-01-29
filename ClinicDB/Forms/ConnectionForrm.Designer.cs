@@ -31,7 +31,7 @@ namespace ClinicDB.Forms
         {
             this.btnSave = new CustomControls.RJControls.RJButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.username = new RJCodeAdvance.RJControls.RJTextBox();
+            this.fileName = new RJCodeAdvance.RJControls.RJTextBox();
             this.sourceText = new RJCodeAdvance.RJControls.RJTextBox();
             this.dbText = new RJCodeAdvance.RJControls.RJTextBox();
             this.flowLayoutPanel1.SuspendLayout();
@@ -48,9 +48,10 @@ namespace ClinicDB.Forms
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(103, 309);
+            this.btnSave.Location = new System.Drawing.Point(116, 386);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(326, 75);
+            this.btnSave.Size = new System.Drawing.Size(367, 94);
             this.btnSave.TabIndex = 24;
             this.btnSave.Text = "Save";
             this.btnSave.TextColor = System.Drawing.Color.White;
@@ -59,39 +60,39 @@ namespace ClinicDB.Forms
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.username);
+            this.flowLayoutPanel1.Controls.Add(this.fileName);
             this.flowLayoutPanel1.Controls.Add(this.sourceText);
             this.flowLayoutPanel1.Controls.Add(this.dbText);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(103, 71);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 10, 5, 0);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(116, 89);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 12, 6, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(326, 202);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(367, 252);
             this.flowLayoutPanel1.TabIndex = 26;
             // 
-            // username
+            // fileName
             // 
-            this.username.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.username.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.username.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
-            this.username.BorderRadius = 0;
-            this.username.BorderSize = 2;
-            this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.username.Location = new System.Drawing.Point(5, 5);
-            this.username.Margin = new System.Windows.Forms.Padding(0);
-            this.username.Multiline = true;
-            this.username.Name = "username";
-            this.username.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.username.PasswordChar = false;
-            this.username.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.username.PlaceholderText = "File name";
-            this.username.Size = new System.Drawing.Size(309, 60);
-            this.username.TabIndex = 24;
-            this.username.Texts = "";
-            this.username.UnderlinedStyle = true;
-            this.username._TextChanged += new System.EventHandler(this.username__TextChanged);
+            this.fileName.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.fileName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.fileName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.fileName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
+            this.fileName.BorderRadius = 0;
+            this.fileName.BorderSize = 2;
+            this.fileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fileName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.fileName.Location = new System.Drawing.Point(6, 6);
+            this.fileName.Margin = new System.Windows.Forms.Padding(0);
+            this.fileName.Multiline = true;
+            this.fileName.Name = "fileName";
+            this.fileName.Padding = new System.Windows.Forms.Padding(11, 9, 11, 9);
+            this.fileName.PasswordChar = false;
+            this.fileName.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.fileName.PlaceholderText = "File name";
+            this.fileName.Size = new System.Drawing.Size(361, 75);
+            this.fileName.TabIndex = 24;
+            this.fileName.Texts = "";
+            this.fileName.UnderlinedStyle = true;
+            this.fileName._TextChanged += new System.EventHandler(this.username__TextChanged);
             // 
             // sourceText
             // 
@@ -103,15 +104,15 @@ namespace ClinicDB.Forms
             this.sourceText.BorderSize = 2;
             this.sourceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sourceText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.sourceText.Location = new System.Drawing.Point(5, 65);
+            this.sourceText.Location = new System.Drawing.Point(6, 81);
             this.sourceText.Margin = new System.Windows.Forms.Padding(0);
             this.sourceText.Multiline = true;
             this.sourceText.Name = "sourceText";
-            this.sourceText.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.sourceText.Padding = new System.Windows.Forms.Padding(11, 9, 11, 9);
             this.sourceText.PasswordChar = false;
             this.sourceText.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.sourceText.PlaceholderText = "Server Name";
-            this.sourceText.Size = new System.Drawing.Size(309, 60);
+            this.sourceText.Size = new System.Drawing.Size(361, 75);
             this.sourceText.TabIndex = 25;
             this.sourceText.Texts = "";
             this.sourceText.UnderlinedStyle = true;
@@ -126,28 +127,29 @@ namespace ClinicDB.Forms
             this.dbText.BorderSize = 2;
             this.dbText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dbText.Location = new System.Drawing.Point(5, 125);
+            this.dbText.Location = new System.Drawing.Point(6, 156);
             this.dbText.Margin = new System.Windows.Forms.Padding(0);
             this.dbText.Multiline = true;
             this.dbText.Name = "dbText";
-            this.dbText.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.dbText.Padding = new System.Windows.Forms.Padding(11, 9, 11, 9);
             this.dbText.PasswordChar = false;
             this.dbText.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.dbText.PlaceholderText = "Database";
-            this.dbText.Size = new System.Drawing.Size(309, 60);
+            this.dbText.Size = new System.Drawing.Size(361, 75);
             this.dbText.TabIndex = 26;
             this.dbText.Texts = "";
             this.dbText.UnderlinedStyle = true;
             // 
             // ConnectionForrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 482);
+            this.ClientSize = new System.Drawing.Size(611, 591);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnSave);
-            this.MaximumSize = new System.Drawing.Size(565, 529);
-            this.MinimumSize = new System.Drawing.Size(565, 529);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximumSize = new System.Drawing.Size(633, 647);
+            this.MinimumSize = new System.Drawing.Size(633, 647);
             this.Name = "ConnectionForrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConnectionForrm";
@@ -160,7 +162,7 @@ namespace ClinicDB.Forms
         #endregion
         public CustomControls.RJControls.RJButton btnSave;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        public RJCodeAdvance.RJControls.RJTextBox username;
+        public RJCodeAdvance.RJControls.RJTextBox fileName;
         public RJCodeAdvance.RJControls.RJTextBox sourceText;
         public RJCodeAdvance.RJControls.RJTextBox dbText;
     }

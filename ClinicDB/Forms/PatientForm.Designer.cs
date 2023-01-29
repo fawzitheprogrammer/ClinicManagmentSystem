@@ -359,6 +359,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "PatientForm";
             this.Text = "Patient Form";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.StaffMemeberForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).EndInit();
