@@ -192,7 +192,7 @@
             this.patientDG.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
@@ -259,12 +259,12 @@
             this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
-            this.ID.Width = 71;
+            this.ID.Width = 64;
             // 
             // patientCol
             // 
             this.patientCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.patientCol.HeaderText = "Patient";
+            this.patientCol.HeaderText = "چارەخواز";
             this.patientCol.MinimumWidth = 6;
             this.patientCol.Name = "patientCol";
             this.patientCol.ReadOnly = true;
@@ -272,14 +272,14 @@
             // fatherCol
             // 
             this.fatherCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.fatherCol.HeaderText = "Father/Guardian";
+            this.fatherCol.HeaderText = "ناوی بەخێوكەر";
             this.fatherCol.MinimumWidth = 6;
             this.fatherCol.Name = "fatherCol";
             this.fatherCol.ReadOnly = true;
             // 
             // TurnNumber
             // 
-            this.TurnNumber.HeaderText = "Turn Number";
+            this.TurnNumber.HeaderText = "ژمارەی سەرە";
             this.TurnNumber.MinimumWidth = 8;
             this.TurnNumber.Name = "TurnNumber";
             this.TurnNumber.ReadOnly = true;
@@ -287,14 +287,14 @@
             // appointmentDateCol
             // 
             this.appointmentDateCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.appointmentDateCol.HeaderText = "Appointment Date";
+            this.appointmentDateCol.HeaderText = "بەرواری چاوپێكەوتن";
             this.appointmentDateCol.MinimumWidth = 6;
             this.appointmentDateCol.Name = "appointmentDateCol";
             this.appointmentDateCol.ReadOnly = true;
             // 
             // phoneCol
             // 
-            this.phoneCol.HeaderText = "Phone";
+            this.phoneCol.HeaderText = "ژمارەی موبایل";
             this.phoneCol.MinimumWidth = 8;
             this.phoneCol.Name = "phoneCol";
             this.phoneCol.ReadOnly = true;
@@ -302,17 +302,17 @@
             // ageCol
             // 
             this.ageCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ageCol.HeaderText = "Age";
+            this.ageCol.HeaderText = "تەمەن";
             this.ageCol.MinimumWidth = 6;
             this.ageCol.Name = "ageCol";
             this.ageCol.ReadOnly = true;
-            this.ageCol.Width = 94;
+            this.ageCol.Width = 108;
             // 
             // doctorCol
             // 
             this.doctorCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.doctorCol.FillWeight = 69.91109F;
-            this.doctorCol.HeaderText = "Doctor";
+            this.doctorCol.HeaderText = "ناوی دكتۆر";
             this.doctorCol.MinimumWidth = 6;
             this.doctorCol.Name = "doctorCol";
             this.doctorCol.ReadOnly = true;
@@ -327,7 +327,7 @@
             // 
             // StatusCol
             // 
-            this.StatusCol.HeaderText = "Status";
+            this.StatusCol.HeaderText = "بار";
             this.StatusCol.MinimumWidth = 8;
             this.StatusCol.Name = "StatusCol";
             this.StatusCol.ReadOnly = true;
@@ -349,7 +349,7 @@
             this.delete.ReadOnly = true;
             this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.delete.Width = 83;
+            this.delete.Width = 80;
             // 
             // PatientForm
             // 

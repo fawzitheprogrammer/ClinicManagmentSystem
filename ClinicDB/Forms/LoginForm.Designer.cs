@@ -94,7 +94,7 @@
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(459, 63);
             this.cancelBtn.TabIndex = 33;
-            this.cancelBtn.Text = "CONNECT TO SERVER";
+            this.cancelBtn.Text = "بەستن لەگەڵ سێرڤەر";
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // loginBtn
@@ -105,13 +105,13 @@
             this.loginBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.loginBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.loginBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(161)))));
-            this.loginBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginBtn.Font = new System.Drawing.Font("Rabar_043", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.White;
             this.loginBtn.Location = new System.Drawing.Point(90, 351);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(459, 63);
             this.loginBtn.TabIndex = 32;
-            this.loginBtn.Text = "LOGIN";
+            this.loginBtn.Text = "چوونەژوورەوە";
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // passText
@@ -129,10 +129,10 @@
             this.passText.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(67)))), ((int)(((byte)(96)))));
             this.passText.LineIdleColor = System.Drawing.Color.Gray;
             this.passText.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(67)))), ((int)(((byte)(96)))));
-            this.passText.LineThickness = 3;
-            this.passText.Location = new System.Drawing.Point(90, 231);
+            this.passText.LineThickness = 5;
+            this.passText.Location = new System.Drawing.Point(90, 236);
             this.passText.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.passText.MaxLength = 32767;
+            this.passText.MaxLength = 20;
             this.passText.Name = "passText";
             this.passText.Size = new System.Drawing.Size(459, 58);
             this.passText.TabIndex = 31;
@@ -145,22 +145,22 @@
             this.userText.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.userText.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.userText.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.userText.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.userText.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.userText.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.userText.HintText = "Username";
+            this.userText.HintText = "ناوی بەكارهێنەر";
             this.userText.isPassword = false;
             this.userText.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(67)))), ((int)(((byte)(96)))));
             this.userText.LineIdleColor = System.Drawing.Color.Gray;
             this.userText.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(67)))), ((int)(((byte)(96)))));
-            this.userText.LineThickness = 3;
-            this.userText.Location = new System.Drawing.Point(90, 118);
+            this.userText.LineThickness = 5;
+            this.userText.Location = new System.Drawing.Point(89, 146);
             this.userText.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.userText.MaxLength = 32767;
+            this.userText.MaxLength = 20;
             this.userText.Name = "userText";
-            this.userText.Size = new System.Drawing.Size(459, 58);
+            this.userText.Size = new System.Drawing.Size(458, 58);
             this.userText.TabIndex = 30;
-            this.userText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.userText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel1
             // 

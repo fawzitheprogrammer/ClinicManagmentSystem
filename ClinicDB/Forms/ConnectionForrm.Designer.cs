@@ -46,14 +46,14 @@ namespace ClinicDB.Forms
             this.btnSave.BorderSize = 0;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Rabar_044", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(116, 386);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(367, 94);
             this.btnSave.TabIndex = 24;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "پاشەكەوت كردن";
             this.btnSave.TextColor = System.Drawing.Color.White;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -66,7 +66,7 @@ namespace ClinicDB.Forms
             this.flowLayoutPanel1.Location = new System.Drawing.Point(116, 89);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 12, 6, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(6);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(367, 252);
             this.flowLayoutPanel1.TabIndex = 26;
             // 
@@ -78,7 +78,7 @@ namespace ClinicDB.Forms
             this.fileName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
             this.fileName.BorderRadius = 0;
             this.fileName.BorderSize = 2;
-            this.fileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fileName.Font = new System.Drawing.Font("Rabar_044", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fileName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.fileName.Location = new System.Drawing.Point(6, 6);
             this.fileName.Margin = new System.Windows.Forms.Padding(0);
@@ -87,7 +87,8 @@ namespace ClinicDB.Forms
             this.fileName.Padding = new System.Windows.Forms.Padding(11, 9, 11, 9);
             this.fileName.PasswordChar = false;
             this.fileName.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.fileName.PlaceholderText = "File name";
+            this.fileName.PlaceholderText = "ناوی فایل";
+            this.fileName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.fileName.Size = new System.Drawing.Size(361, 75);
             this.fileName.TabIndex = 24;
             this.fileName.Texts = "";
@@ -102,7 +103,7 @@ namespace ClinicDB.Forms
             this.sourceText.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
             this.sourceText.BorderRadius = 0;
             this.sourceText.BorderSize = 2;
-            this.sourceText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sourceText.Font = new System.Drawing.Font("Rabar_044", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sourceText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sourceText.Location = new System.Drawing.Point(6, 81);
             this.sourceText.Margin = new System.Windows.Forms.Padding(0);
@@ -111,7 +112,8 @@ namespace ClinicDB.Forms
             this.sourceText.Padding = new System.Windows.Forms.Padding(11, 9, 11, 9);
             this.sourceText.PasswordChar = false;
             this.sourceText.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.sourceText.PlaceholderText = "Server Name";
+            this.sourceText.PlaceholderText = "ناوی سێرڤەر";
+            this.sourceText.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.sourceText.Size = new System.Drawing.Size(361, 75);
             this.sourceText.TabIndex = 25;
             this.sourceText.Texts = "";
@@ -125,7 +127,7 @@ namespace ClinicDB.Forms
             this.dbText.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
             this.dbText.BorderRadius = 0;
             this.dbText.BorderSize = 2;
-            this.dbText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbText.Font = new System.Drawing.Font("Rabar_044", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dbText.Location = new System.Drawing.Point(6, 156);
             this.dbText.Margin = new System.Windows.Forms.Padding(0);
@@ -134,7 +136,8 @@ namespace ClinicDB.Forms
             this.dbText.Padding = new System.Windows.Forms.Padding(11, 9, 11, 9);
             this.dbText.PasswordChar = false;
             this.dbText.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.dbText.PlaceholderText = "Database";
+            this.dbText.PlaceholderText = "ناوی داتابەیس";
+            this.dbText.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dbText.Size = new System.Drawing.Size(361, 75);
             this.dbText.TabIndex = 26;
             this.dbText.Texts = "";

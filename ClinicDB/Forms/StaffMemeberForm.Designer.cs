@@ -77,7 +77,7 @@
             this.usersDG.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
@@ -254,12 +254,12 @@
             this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
-            this.ID.Width = 71;
+            this.ID.Width = 64;
             // 
             // Names
             // 
             this.Names.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Names.HeaderText = "Name";
+            this.Names.HeaderText = "ناو";
             this.Names.MinimumWidth = 6;
             this.Names.Name = "Names";
             this.Names.ReadOnly = true;
@@ -268,7 +268,7 @@
             // 
             this.Username.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Username.FillWeight = 63.07779F;
-            this.Username.HeaderText = "Username";
+            this.Username.HeaderText = "ئای دی بەكارهێنەر";
             this.Username.MinimumWidth = 6;
             this.Username.Name = "Username";
             this.Username.ReadOnly = true;
@@ -276,7 +276,7 @@
             // Password
             // 
             this.Password.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Password.HeaderText = "Password";
+            this.Password.HeaderText = "وشەی تێپەر";
             this.Password.MinimumWidth = 6;
             this.Password.Name = "Password";
             this.Password.ReadOnly = true;
@@ -284,7 +284,7 @@
             // Phone
             // 
             this.Phone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Phone.HeaderText = "Phone";
+            this.Phone.HeaderText = "ژمارەی موبایل";
             this.Phone.MinimumWidth = 6;
             this.Phone.Name = "Phone";
             this.Phone.ReadOnly = true;
@@ -296,7 +296,7 @@
             dataGridViewCellStyle3.NullValue = null;
             this.Address.DefaultCellStyle = dataGridViewCellStyle3;
             this.Address.FillWeight = 66.28049F;
-            this.Address.HeaderText = "Address";
+            this.Address.HeaderText = "ناونیشان";
             this.Address.MaxInputLength = 5;
             this.Address.MinimumWidth = 6;
             this.Address.Name = "Address";
@@ -307,7 +307,7 @@
             // 
             this.Roles.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Roles.FillWeight = 69.91109F;
-            this.Roles.HeaderText = "Role";
+            this.Roles.HeaderText = "ڕۆڵ";
             this.Roles.MinimumWidth = 6;
             this.Roles.Name = "Roles";
             this.Roles.ReadOnly = true;
@@ -321,7 +321,7 @@
             this.delete.ReadOnly = true;
             this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.delete.Width = 83;
+            this.delete.Width = 80;
             // 
             // RoleID
             // 

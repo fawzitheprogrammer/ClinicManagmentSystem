@@ -59,15 +59,15 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 10.2F);
+            this.label5.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label5.Location = new System.Drawing.Point(39, 362);
+            this.label5.Location = new System.Drawing.Point(345, 355);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(63, 37);
+            this.label5.Size = new System.Drawing.Size(45, 31);
             this.label5.TabIndex = 31;
-            this.label5.Text = "TYPE";
+            this.label5.Text = "جۆر";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // type
@@ -121,13 +121,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 10.2F);
+            this.label1.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label1.Location = new System.Drawing.Point(36, 194);
+            this.label1.Location = new System.Drawing.Point(264, 200);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 37);
+            this.label1.Size = new System.Drawing.Size(126, 31);
             this.label1.TabIndex = 29;
-            this.label1.Text = "COMPANY";
+            this.label1.Text = "ناوی كۆمپانیا";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // rjButton1
@@ -139,14 +139,14 @@
             this.rjButton1.BorderSize = 0;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Poppins", 10.8F);
+            this.rjButton1.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
             this.rjButton1.Location = new System.Drawing.Point(42, 616);
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(348, 64);
             this.rjButton1.TabIndex = 27;
-            this.rjButton1.Text = "Update";
+            this.rjButton1.Text = "نوێ كردنەوە";
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click_1);
@@ -160,14 +160,14 @@
             this.btnSave.BorderSize = 0;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Poppins", 10.8F);
+            this.btnSave.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(42, 532);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(348, 64);
             this.btnSave.TabIndex = 26;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "پاشەكەوت كردن";
             this.btnSave.TextColor = System.Drawing.Color.White;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -197,13 +197,13 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins", 10.2F);
+            this.label2.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label2.Location = new System.Drawing.Point(36, 36);
+            this.label2.Location = new System.Drawing.Point(249, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 37);
+            this.label2.Size = new System.Drawing.Size(140, 31);
             this.label2.TabIndex = 23;
-            this.label2.Text = "MEDICINE";
+            this.label2.Text = "ناوی نەخۆشی";
             // 
             // MedicineAdd
             // 

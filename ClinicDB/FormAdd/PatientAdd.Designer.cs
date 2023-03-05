@@ -58,16 +58,15 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label2.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label2.Location = new System.Drawing.Point(97, 192);
+            this.label2.Location = new System.Drawing.Point(274, 225);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(167, 25);
+            this.label2.Size = new System.Drawing.Size(342, 38);
             this.label2.TabIndex = 3;
-            this.label2.Text = "PATIENT NAME";
+            this.label2.Text = "ناوی چارەخواز";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // patientNameTxt
@@ -79,7 +78,7 @@
             this.patientNameTxt.BorderSize = 2;
             this.patientNameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.patientNameTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.patientNameTxt.Location = new System.Drawing.Point(100, 222);
+            this.patientNameTxt.Location = new System.Drawing.Point(101, 263);
             this.patientNameTxt.Margin = new System.Windows.Forms.Padding(0);
             this.patientNameTxt.Multiline = true;
             this.patientNameTxt.Name = "patientNameTxt";
@@ -102,7 +101,7 @@
             this.fatherTxt.BorderSize = 2;
             this.fatherTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fatherTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.fatherTxt.Location = new System.Drawing.Point(100, 365);
+            this.fatherTxt.Location = new System.Drawing.Point(101, 457);
             this.fatherTxt.Margin = new System.Windows.Forms.Padding(0);
             this.fatherTxt.Multiline = true;
             this.fatherTxt.Name = "fatherTxt";
@@ -118,16 +117,15 @@
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label7.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label7.Location = new System.Drawing.Point(97, 329);
+            this.label7.Location = new System.Drawing.Point(283, 419);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
             this.label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label7.Size = new System.Drawing.Size(211, 25);
+            this.label7.Size = new System.Drawing.Size(317, 38);
             this.label7.TabIndex = 17;
-            this.label7.Text = "FATHER/GUARDIAN";
+            this.label7.Text = "ناوی بەخێوكەر";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
@@ -151,14 +149,14 @@
             this.save.BorderSize = 0;
             this.save.FlatAppearance.BorderSize = 0;
             this.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.save.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save.Font = new System.Drawing.Font("Rabar_044", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.save.ForeColor = System.Drawing.Color.White;
-            this.save.Location = new System.Drawing.Point(104, 975);
+            this.save.Location = new System.Drawing.Point(105, 1065);
             this.save.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(400, 64);
             this.save.TabIndex = 18;
-            this.save.Text = "Save";
+            this.save.Text = "پاشەكەوت كردن";
             this.save.TextColor = System.Drawing.Color.White;
             this.save.UseVisualStyleBackColor = false;
             this.save.Click += new System.EventHandler(this.save_Click);
@@ -172,30 +170,29 @@
             this.update.BorderSize = 0;
             this.update.FlatAppearance.BorderSize = 0;
             this.update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.update.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update.Font = new System.Drawing.Font("Rabar_044", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update.ForeColor = System.Drawing.Color.White;
-            this.update.Location = new System.Drawing.Point(105, 1046);
+            this.update.Location = new System.Drawing.Point(106, 1136);
             this.update.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(400, 64);
             this.update.TabIndex = 19;
-            this.update.Text = "Update";
+            this.update.Text = "نوێ كردنەوە";
             this.update.TextColor = System.Drawing.Color.White;
             this.update.UseVisualStyleBackColor = false;
             this.update.Click += new System.EventHandler(this.update_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label1.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label1.Location = new System.Drawing.Point(94, 50);
+            this.label1.Location = new System.Drawing.Point(298, 50);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(86, 25);
+            this.label1.Size = new System.Drawing.Size(302, 38);
             this.label1.TabIndex = 1;
-            this.label1.Text = "PHONE";
+            this.label1.Text = "ژمارەی موبایل";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -227,10 +224,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.MaximumSize = new System.Drawing.Size(1226, 1168);
             this.panel1.MinimumSize = new System.Drawing.Size(1226, 1168);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1226, 1168);
+            this.panel1.Size = new System.Drawing.Size(1424, 1299);
             this.panel1.TabIndex = 25;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -265,7 +261,7 @@
             this.ageTxt.BorderSize = 2;
             this.ageTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ageTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ageTxt.Location = new System.Drawing.Point(105, 514);
+            this.ageTxt.Location = new System.Drawing.Point(101, 627);
             this.ageTxt.Margin = new System.Windows.Forms.Padding(0);
             this.ageTxt.Multiline = true;
             this.ageTxt.Name = "ageTxt";
@@ -281,32 +277,31 @@
             // 
             // A
             // 
-            this.A.AutoSize = true;
-            this.A.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.A.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.A.Location = new System.Drawing.Point(101, 478);
+            this.A.Location = new System.Drawing.Point(430, 580);
             this.A.Margin = new System.Windows.Forms.Padding(0);
             this.A.Name = "A";
             this.A.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.A.Size = new System.Drawing.Size(56, 25);
+            this.A.Size = new System.Drawing.Size(84, 38);
             this.A.TabIndex = 36;
-            this.A.Text = "AGE";
+            this.A.Text = "تەمەن";
             this.A.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Gray;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label9.Font = new System.Drawing.Font("Rabar_043", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(673, 64);
+            this.label9.Location = new System.Drawing.Point(828, 50);
             this.label9.Margin = new System.Windows.Forms.Padding(0);
             this.label9.Name = "label9";
             this.label9.Padding = new System.Windows.Forms.Padding(118, 25, 118, 25);
             this.label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label9.Size = new System.Drawing.Size(435, 75);
+            this.label9.Size = new System.Drawing.Size(426, 81);
             this.label9.TabIndex = 34;
-            this.label9.Text = "PATIENT HISTORY";
+            this.label9.Text = "ئەرشیفی چارەخواز";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // statusTxt
@@ -319,7 +314,7 @@
             this.statusTxt.BorderSize = 2;
             this.statusTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statusTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.statusTxt.Location = new System.Drawing.Point(678, 570);
+            this.statusTxt.Location = new System.Drawing.Point(828, 601);
             this.statusTxt.Margin = new System.Windows.Forms.Padding(0);
             this.statusTxt.Multiline = true;
             this.statusTxt.Name = "statusTxt";
@@ -337,29 +332,29 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label8.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label8.Location = new System.Drawing.Point(673, 538);
+            this.label8.Location = new System.Drawing.Point(1190, 561);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
             this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label8.Size = new System.Drawing.Size(95, 25);
+            this.label8.Size = new System.Drawing.Size(33, 31);
             this.label8.TabIndex = 33;
-            this.label8.Text = "STATUS";
+            this.label8.Text = "بار";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label4.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label4.Location = new System.Drawing.Point(681, 199);
+            this.label4.Location = new System.Drawing.Point(1020, 173);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label4.Size = new System.Drawing.Size(284, 25);
+            this.label4.Size = new System.Drawing.Size(205, 31);
             this.label4.TabIndex = 31;
-            this.label4.Text = "LAST APPOINTMENT DATE";
+            this.label4.Text = "بەرواری كۆتا چاپێكەوتن";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lastAppointmentDatePicker
@@ -370,7 +365,7 @@
             this.lastAppointmentDatePicker.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
             this.lastAppointmentDatePicker.CalendarTitleForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.lastAppointmentDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastAppointmentDatePicker.Location = new System.Drawing.Point(678, 248);
+            this.lastAppointmentDatePicker.Location = new System.Drawing.Point(826, 248);
             this.lastAppointmentDatePicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lastAppointmentDatePicker.MaxDate = new System.DateTime(2101, 1, 1, 0, 0, 0, 0);
             this.lastAppointmentDatePicker.MinDate = new System.DateTime(2022, 12, 30, 0, 0, 0, 0);
@@ -392,7 +387,7 @@
             this.consultedTxt.BorderSize = 2;
             this.consultedTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.consultedTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.consultedTxt.Location = new System.Drawing.Point(678, 416);
+            this.consultedTxt.Location = new System.Drawing.Point(828, 430);
             this.consultedTxt.Margin = new System.Windows.Forms.Padding(0);
             this.consultedTxt.Multiline = true;
             this.consultedTxt.Name = "consultedTxt";
@@ -410,29 +405,28 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label6.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label6.Location = new System.Drawing.Point(674, 380);
+            this.label6.Location = new System.Drawing.Point(1072, 379);
             this.label6.Margin = new System.Windows.Forms.Padding(0);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label6.Size = new System.Drawing.Size(176, 25);
+            this.label6.Size = new System.Drawing.Size(153, 31);
             this.label6.TabIndex = 29;
-            this.label6.Text = "CONSULTED TO";
+            this.label6.Text = "دكتۆری چارەخواز";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label3.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label3.Location = new System.Drawing.Point(106, 776);
+            this.label3.Location = new System.Drawing.Point(244, 904);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label3.Size = new System.Drawing.Size(225, 25);
+            this.label3.Size = new System.Drawing.Size(338, 38);
             this.label3.TabIndex = 27;
-            this.label3.Text = "APPOINTMENT DATE";
+            this.label3.Text = "بەرواری چاوپێكەوتن";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // appointmentDatePicker
@@ -443,7 +437,7 @@
             this.appointmentDatePicker.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
             this.appointmentDatePicker.CalendarTitleForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.appointmentDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.appointmentDatePicker.Location = new System.Drawing.Point(104, 825);
+            this.appointmentDatePicker.Location = new System.Drawing.Point(102, 964);
             this.appointmentDatePicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.appointmentDatePicker.MaxDate = new System.DateTime(2101, 1, 1, 0, 0, 0, 0);
             this.appointmentDatePicker.MinDate = new System.DateTime(2022, 12, 30, 0, 0, 0, 0);
@@ -456,16 +450,15 @@
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label5.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(94)))), ((int)(((byte)(99)))));
-            this.label5.Location = new System.Drawing.Point(101, 622);
+            this.label5.Location = new System.Drawing.Point(283, 737);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(213, 25);
+            this.label5.Size = new System.Drawing.Size(320, 38);
             this.label5.TabIndex = 25;
-            this.label5.Text = "APPOINTMENT FOR";
+            this.label5.Text = "چاوپێكەوتن بۆ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // appointmentForCombo
@@ -490,7 +483,7 @@
             this.appointmentForCombo.ItemsAppearance.SelectedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
             this.appointmentForCombo.ItemsAppearance.SelectedFont = new System.Drawing.Font("Poppins Medium", 12F);
             this.appointmentForCombo.ItemsAppearance.SelectedForeColor = System.Drawing.Color.White;
-            this.appointmentForCombo.Location = new System.Drawing.Point(104, 669);
+            this.appointmentForCombo.Location = new System.Drawing.Point(102, 804);
             this.appointmentForCombo.Margin = new System.Windows.Forms.Padding(0);
             this.appointmentForCombo.MaxDropDownItems = 89;
             this.appointmentForCombo.Name = "appointmentForCombo";
@@ -530,11 +523,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.ClientSize = new System.Drawing.Size(1226, 1168);
+            this.ClientSize = new System.Drawing.Size(1424, 1299);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1248, 1224);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1248, 1224);
             this.Name = "PatientAdd";

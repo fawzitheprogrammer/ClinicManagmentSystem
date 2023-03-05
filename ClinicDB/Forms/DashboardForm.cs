@@ -39,13 +39,13 @@ namespace ClinicDB.Forms
         private void DashboardForm_Load(object sender, EventArgs e)
         {
 
-            countRecords("st_countPatient", "Patients", allPatient);
-            countRecords("st_countMedicine", "Medicines", allMedicine);
-            countRecords("st_countStaffDoctor", "Doctors", allDoctors);
-            countRecords("st_countStaffNurse", "Nurses", allNurse);
-            countRecords("st_countStaffAdmins", "Admins", allAdmin);
-            countRecords("st_countStaffMembers", "Staff Members", allStaffMembers);
-            countRecords("st_countDiseases", "Diseases", allDisease);
+            countRecords("st_countPatient", "چارەخوازەكان", allPatient);
+            countRecords("st_countMedicine", "دەرمانەكان", allMedicine);
+            countRecords("st_countStaffDoctor", "دكتۆرەكان", allDoctors);
+            countRecords("st_countStaffNurse", "پەرستارەكان", allNurse);
+            countRecords("st_countStaffAdmins", "ئەدمینەكان", allAdmin);
+            countRecords("st_countStaffMembers", "ئەندامانی ستاف", allStaffMembers);
+            countRecords("st_countDiseases", "نەخۆشیەكان", allDisease);
             //st_countDiseases
 
 

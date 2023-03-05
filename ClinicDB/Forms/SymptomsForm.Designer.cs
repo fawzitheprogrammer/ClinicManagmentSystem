@@ -34,17 +34,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.symptomsDg = new System.Windows.Forms.DataGridView();
-            this.symptomsID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.symptomsGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diseaseGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diseaseIDGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.delete = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.search = new Guna.UI2.WinForms.Guna2TextBox();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.symptomsID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.symptomsGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diseaseGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diseaseIDGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.delete = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.symptomsDg)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +65,7 @@
             this.symptomsDg.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins Medium", 10F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rabar_044", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
@@ -118,48 +118,6 @@
             this.symptomsDg.TabIndex = 9;
             this.symptomsDg.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.user_CellContentClick);
             this.symptomsDg.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.user_CellMouseClick);
-            // 
-            // symptomsID
-            // 
-            this.symptomsID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.symptomsID.FillWeight = 20F;
-            this.symptomsID.HeaderText = "#";
-            this.symptomsID.MinimumWidth = 4;
-            this.symptomsID.Name = "symptomsID";
-            this.symptomsID.ReadOnly = true;
-            // 
-            // symptomsGV
-            // 
-            this.symptomsGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.symptomsGV.FillWeight = 124.1379F;
-            this.symptomsGV.HeaderText = "Symptoms";
-            this.symptomsGV.MinimumWidth = 6;
-            this.symptomsGV.Name = "symptomsGV";
-            this.symptomsGV.ReadOnly = true;
-            // 
-            // diseaseGV
-            // 
-            this.diseaseGV.HeaderText = "Disease";
-            this.diseaseGV.MinimumWidth = 8;
-            this.diseaseGV.Name = "diseaseGV";
-            this.diseaseGV.ReadOnly = true;
-            // 
-            // diseaseIDGV
-            // 
-            this.diseaseIDGV.HeaderText = "DiseaseID";
-            this.diseaseIDGV.MinimumWidth = 8;
-            this.diseaseIDGV.Name = "diseaseIDGV";
-            this.diseaseIDGV.ReadOnly = true;
-            this.diseaseIDGV.Visible = false;
-            // 
-            // delete
-            // 
-            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.delete.HeaderText = "❌";
-            this.delete.MinimumWidth = 6;
-            this.delete.Name = "delete";
-            this.delete.ReadOnly = true;
-            this.delete.Width = 53;
             // 
             // panel1
             // 
@@ -255,6 +213,48 @@
             this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 519;
+            // 
+            // symptomsID
+            // 
+            this.symptomsID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.symptomsID.FillWeight = 20F;
+            this.symptomsID.HeaderText = "#";
+            this.symptomsID.MinimumWidth = 4;
+            this.symptomsID.Name = "symptomsID";
+            this.symptomsID.ReadOnly = true;
+            // 
+            // symptomsGV
+            // 
+            this.symptomsGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.symptomsGV.FillWeight = 124.1379F;
+            this.symptomsGV.HeaderText = "نیشانە";
+            this.symptomsGV.MinimumWidth = 6;
+            this.symptomsGV.Name = "symptomsGV";
+            this.symptomsGV.ReadOnly = true;
+            // 
+            // diseaseGV
+            // 
+            this.diseaseGV.HeaderText = "نەخۆشی";
+            this.diseaseGV.MinimumWidth = 8;
+            this.diseaseGV.Name = "diseaseGV";
+            this.diseaseGV.ReadOnly = true;
+            // 
+            // diseaseIDGV
+            // 
+            this.diseaseIDGV.HeaderText = "DiseaseID";
+            this.diseaseIDGV.MinimumWidth = 8;
+            this.diseaseIDGV.Name = "diseaseIDGV";
+            this.diseaseIDGV.ReadOnly = true;
+            this.diseaseIDGV.Visible = false;
+            // 
+            // delete
+            // 
+            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.delete.HeaderText = "❌";
+            this.delete.MinimumWidth = 6;
+            this.delete.Name = "delete";
+            this.delete.ReadOnly = true;
+            this.delete.Width = 50;
             // 
             // SymptomsForm
             // 
